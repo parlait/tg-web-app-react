@@ -1,7 +1,7 @@
 //import logo from './logo.svg';
 import { useEffect } from 'react';
 import {useTelegram} from "./components/hooks/useTelegram.js";
-import Header from "./components/Header/Header.js";
+import Header from "./components/Header/Header.jsx";
 //const {user, onClose} = useTelegram();
 //import './App.css';
 
