@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import { useEffect } from 'react';
-import {useTelegram} from "components/hooks/useTelegram.js";
+import {useTelegram} from "./components/hooks/useTelegram.js";
 //const {user, onClose} = useTelegram();
 //import './App.css';
 
