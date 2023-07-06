@@ -1,9 +1,12 @@
 //import logo from './logo.svg';
 import { useEffect } from 'react';
+import {useTelegram} from "./hooks/useTelegram";
+//const {user, onClose} = useTelegram();
 
 
 function App() {
-if(1==2){
+  const {onToggleButton, tg} = useTelegram();
+//if(1==2){
   useEffect(() => {
     tg.ready();
   }, [])
@@ -12,11 +15,11 @@ if(1==2){
 
   return (
     <div className="App">
-      work
+      <button onClick={onToggleButton}>toggle</button>
     
       </div>
   );
-};
+//};
 return (
   <div className="App">
     work
