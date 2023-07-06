@@ -1,8 +1,11 @@
 //import logo from './logo.svg';
 import { useEffect } from 'react';
-import {useTelegram} from "./hooks/useTelegram";
+import {useTelegram} from "hooks/useTelegram.js";
 //const {user, onClose} = useTelegram();
+//import './App.css';
 
+
+//  <button onClick={onClose}>Закрыть</button>
 
 function App() {
   const {onToggleButton, tg} = useTelegram();
