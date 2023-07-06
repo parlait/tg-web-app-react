@@ -1,22 +1,19 @@
 //import logo from './logo.svg';
 import { useEffect } from 'react';
-import './App.css';
-const tg = window.Telegram.Webapp;
+
 
 function App() {
 if(1==2){
   useEffect(() => {
     tg.ready();
   }, [])
-  const onClose = () => {
-    tg.close()
 
-  }
+  
 
   return (
     <div className="App">
       work
-      <button onClick={onClose}>Закрыть</button>
+    
       </div>
   );
 };
