@@ -4,8 +4,8 @@ import { useEffect } from 'react';
 import {useTelegram} from "./components/hooks/useTelegram.js";
 import Header from "./components/Header/Header.jsx";
 import {Route, Routes} from "react-router-dom";
-import ProductList from './components/ProductList/ProductList';
-import Form from './components/Form/Form';
+import ProductList from './components/ProductList/ProductList.jsx';
+import Form from './components/Form/Form.jsx';
 //const {user, onClose} = useTelegram();
 
 
