@@ -1,0 +1,109 @@
+{
+    "name": "ghfjeldofndjfkskslejfkdosslhr",
+    "versiya": "1",
+    "estVybor":{
+        "filial": true,
+        "gorod": true,
+        "rayon": true,
+        "strana": true,
+        "metro": true,
+        "sotrudnik": true,
+        "usluga": true,
+        "dopusluga": true
+    },
+    "pokazyvat":{
+        "filial": true,
+        "gorod": true,
+        "rayon": true,
+        "strana": true,
+        "metro": true,
+        "sotrudnik": true,
+        "dolzhnostSotrudnikov": true,
+        "usluga": true,
+        "dopusluga": true,
+        "cena": true,
+        "dlitelnost": true,
+        "opisanieUslug": true,
+        "opisanieDopUslug": true,
+        "opisaniefiliala": true,
+        "opisanieSotrudnika": true,
+        "nazvanieFiliala": true,
+        "kategoriiUslug": true
+    },
+    "akcii": {
+        "skolkoAktivnyh": 0,
+        "a1": {
+            "idnomer": "1",
+            "skidka": "0",
+            "procentIliValuta": "procent"
+        }
+    },
+    "f": {
+        "skolkoAktivnyh": 1,
+        "f1": {
+            "idnomer": "1",
+            "estNazvanie": "1",
+            "estMetro": true,
+            "estrayony": true,
+            "nazvanie": "филиал Воробьевы горы",
+            "rayon": "СЗАО",
+            "strana": "Россия",
+            "metro": "Воробьевы горы",
+            "gorod": "Москва",
+            "opisanie": "вот это понимаю филиал",
+            "sotrudniki":{
+                "skolkoAktivnyh": 1,
+                "s1": {
+                    "idnomer": "1",
+                    "dolzhnost": "мастер",
+                    "imyaDlyaZapisi": "Маша"
+                }
+            },
+            "k":{
+                "skolkoAktivnyh": 1,
+                "ku1": {
+                    "idnomer": "1",
+                    "estnazvanie": true,
+                    "nazvanie": "ногтевой сервис",
+                    "skolkoAktivnyh": 1,
+                    "u": {
+                        "u1":{
+                            "idnomer": "1",
+                            "estnazvanie": true,
+                            "nazvanie": "наращивание ногтей",
+                            "cena": "30",
+                            "valuta": "rub",
+                            "dlitelnostMM": "100",
+                            "kolicestvoSotrudnikov":"1",
+                            "idsotrudnikov": [
+                                "1","2","3"
+                            ],
+                            "idakcii": [
+                                "1","2","4"
+                            ]
+                        },
+                        "du": {
+                            "skolkoAktivnyh": 1,
+                            "du1": {
+                                "idnomer": "1",
+                                "estnazvanie": true,
+                                "nazvanie": "стемпинг на 1 ногте",
+                                "cena": "30",
+                                "valuta": "rub",
+                                "dlitelnostMM": "100",
+                                "kolicestvoSotrudnikov":"1",
+                                "idsotrudnikov": [
+                                    "1","2","3"
+                                ],
+                                "idakcii": [
+                                    "1","2","3"
+                                ]                                    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+  
