@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 import {useTelegram} from "./components/hooks/useTelegram.js";
 import Header from "./components/Header/Header.jsx";
 import {Route, Routes} from "react-router-dom";

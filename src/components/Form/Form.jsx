@@ -1,5 +1,6 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
+import {useState} from 'react';
+import {useEffect} from 'react';
 import './Form.css';
 import {useTelegram} from '../hooks/useTelegram';
 
@@ -12,7 +13,7 @@ import {useTelegram} from '../hooks/useTelegram';
 
  
 const Form = () => {
-    
+    /*
     const [country, setCountry] = useState('');
     const [street, setStreet] = useState('');
     const [subject, setSubject] = useState('physical');
@@ -24,6 +25,7 @@ const Form = () => {
         })
 
     },[])
+
 
     useEffect( () => {
             if(!street || !country) {
@@ -42,7 +44,7 @@ const Form = () => {
     const onChangeSubject = (e) => {
         setSubject(e.target.value)
     }
-    /*
+    
     */
     return (
         <div className={"form"}>
@@ -50,16 +52,20 @@ const Form = () => {
             <input 
             className={'input'} 
             type="text" 
-            placeholder={'Страна'} 
+            placeholder={'Страна'}
+            /* 
             value={country} 
             onChange={onChangeCountry} 
+            */
             />
             <input 
             className={'input'} 
             type="text" 
             placeholder={'Улица'} 
+            /*
             value={street} 
             onChange={onChangeStreet} 
+            */
             />
             <select value={subject} onChange={onChangeSubject} className={'select'}>
                 <option value={'physical'}>Физ. лицо</option>
@@ -67,7 +73,7 @@ const Form = () => {
             </select>
         </div>
     );
-
+//select value={subject} onChange={onChangeSubject} className=
 
 };
 
