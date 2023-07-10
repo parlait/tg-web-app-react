@@ -6,6 +6,16 @@ import Header from "./components/Header/Header.jsx";
 import {Route, Routes} from "react-router-dom";
 import ProductList from './components/ProductList/ProductList.jsx';
 import Form from './components/Form/Form.jsx';
+import FormDopUsluga from './components/FormDopUsluga/FormDopUsluga.jsx';
+import FormFilial from './components/FormFilial/FormFilial.jsx';
+import FormNastroiki from './components/FormNastroiki/FormNastroiki.jsx';
+import FormOborudovanie from './components/FormOborudovanie/FormOborudovanie.jsx';
+import FormRaspisanie from './components/FormRaspisanie/FormRaspisanie.jsx';
+import FormSotrudnik from './components/FormSotrudnik/FormSotrudnik.jsx';
+import FormUsluga from './components/FormUsluga/FormUsluga.jsx';
+import FormPoseschenie from './components/FormPoseschenie/FormPoseschenie.jsx';
+import UslugiList from './components/UslugiList/UslugiList.jsx';
+import UslugiListVnesSotr from './components/UslugiListVnesSotr/UslugiListVnesSotr.jsx';
 //const {user, onClose} = useTelegram();
 
 
