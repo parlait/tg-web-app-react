@@ -1,6 +1,6 @@
 import React from 'react';
 import './Form.css';
-//import { useTelegram } from '../hooks/useTelegram';
+import {useTelegram} from '../hooks/useTelegram';
 // className={'header'}>
 //     <Button onClick={onClose}>Закрыть</Button>
 //     <span className={'username'}>
@@ -13,7 +13,26 @@ const Form = () => {
     const [country, setCountry] = useState('');
     const [street, setStreet] = useState('');
     const [subject, setSubject] = useState('physical');
-    
+    const {tg} = useTelegram();
+    useEffect(() => {
+        tg.MainButton.setParams({
+            text: 'Отправить данные'
+        })
+
+    },[])
+
+    useEffect(() => {
+        tg.MainButton.setParams({
+            if(!street || !country) {
+                tg.mainButton.hide();
+            }
+            else {
+                tg.mainButton.show();
+            }
+        })
+
+    },[country,street])
+
     const onChangeCountry = (e) => {
         setCountry(e.target.value)
     }
