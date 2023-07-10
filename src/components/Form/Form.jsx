@@ -10,10 +10,11 @@ import {useTelegram} from '../hooks/useTelegram';
 
  
 const Form = () => {
+    /*
     const [country, setCountry] = useState('');
     const [street, setStreet] = useState('');
     const [subject, setSubject] = useState('physical');
-    /*
+    
     const {tg} = useTelegram();
     useEffect( () => {
         tg.MainButton.setParams({
@@ -29,7 +30,7 @@ const Form = () => {
                 tg.mainButton.show();
             }
     },[country, street])
-    */
+    
     const onChangeCountry = (e) => {
         setCountry(e.target.value)
     }
@@ -39,6 +40,7 @@ const Form = () => {
     const onChangeSubject = (e) => {
         setSubject(e.target.value)
     }
+    */
     return (
         <div className={"form"}>
             <h3>Введите ваши данные</h3>
