@@ -10,7 +10,7 @@ import {useTelegram} from '../hooks/useTelegram';
 
  
 const Form = () => {
-    /*
+    
     const [country, setCountry] = useState('');
     const [street, setStreet] = useState('');
     const [subject, setSubject] = useState('physical');
@@ -22,7 +22,7 @@ const Form = () => {
         })
 
     },[])
-
+/*
     useEffect( () => {
             if(!street || !country) {
                 tg.mainButton.hide();
