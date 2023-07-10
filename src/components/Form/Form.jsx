@@ -31,9 +31,9 @@ const Form = () => {
 
     useEffect( () => {
             if(!street || !country) {
-                tg.mainButton.hide();
+                tg.MainButton.hide();
             } else {
-                tg.mainButton.show();
+                tg.MainButton.show();
             }
     },[country, street])
      /*
