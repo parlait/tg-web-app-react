@@ -26,7 +26,7 @@ const Form = () => {
         })
 
     },[])
-    /*
+   
 
 
     useEffect( () => {
@@ -36,7 +36,7 @@ const Form = () => {
                 tg.mainButton.show();
             }
     },[country, street])
-    
+     /*
     const onChangeCountry = (e) => {
         setCountry(e.target.value)
     }
