@@ -27,6 +27,16 @@ function App() {
       <Routes>
         <Route index element={<ProductList />}/>
         <Route path={'form'} element={<Form />}/>
+        <Route path={'formdopusluga'} element={<FormDopUsluga />}/>
+        <Route path={'formfilial'} element={<FormFilial />}/>
+        <Route path={'formnastroiki'} element={<FormNastroiki />}/>
+        <Route path={'formoborudovanie'} element={<FormOborudovanie />}/>
+        <Route path={'formraspisanie'} element={<FormRaspisanie />}/>
+        <Route path={'formsotrudnik'} element={<FormSotrudnik />}/>
+        <Route path={'formusluga'} element={<FormUsluga />}/>
+        <Route path={'formposeschenie'} element={<FormPoseschenie />}/>
+        <Route path={'uslugilist'} element={<UslugiList />}/>
+        <Route path={'uslugilistvnessotr'} element={<UslugiListVnesSotr />}/>        
       </Routes>
     
       </div>
