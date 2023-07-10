@@ -16,6 +16,7 @@ import FormUsluga from './components/FormUsluga/FormUsluga.jsx';
 import FormPoseschenie from './components/FormPoseschenie/FormPoseschenie.jsx';
 import UslugiList from './components/UslugiList/UslugiList.jsx';
 import UslugiListVnesSotr from './components/UslugiListVnesSotr/UslugiListVnesSotr.jsx';
+import FormDolzhnosti from './components/FormDolzhnosti/FormDolzhnosti.jsx';
 //const {user, onClose} = useTelegram();
 
 
@@ -46,7 +47,9 @@ function App() {
         <Route path={'formusluga'} element={<FormUsluga />}/>
         <Route path={'formposeschenie'} element={<FormPoseschenie />}/>
         <Route path={'uslugilist'} element={<UslugiList />}/>
-        <Route path={'uslugilistvnessotr'} element={<UslugiListVnesSotr />}/>        
+        <Route path={'uslugilistvnessotr'} element={<UslugiListVnesSotr />}/>
+        <Route path={'formdolzhnosti'} element={<FormDolzhnosti />}/>
+                
       </Routes>
     
       </div>
