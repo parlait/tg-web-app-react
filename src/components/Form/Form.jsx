@@ -13,7 +13,7 @@ import {useTelegram} from '../hooks/useTelegram';
 
  
 const Form = () => {
-    /*
+    
     const [country, setCountry] = useState('');
     const [street, setStreet] = useState('');
     const [subject, setSubject] = useState('physical');
@@ -44,7 +44,7 @@ const Form = () => {
     const onChangeSubject = (e) => {
         setSubject(e.target.value)
     }
-    
+    /*
     */
     return (
         <div className={"form"}>
