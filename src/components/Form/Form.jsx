@@ -20,22 +20,29 @@ const Form = () => {
     
     const {tg} = useTelegram();
     
+
     const onSendData = useCallback( () =>{ 
-        const data={
+        const data = {
             country,
             street,
             subject
         }
-        tg.sendData(JSON.stringify(data))
-    },[])
+        tg.sendData(JSON.stringify(data));
+    },[
+        country,
+        street,
+        subject
+    ])
     useEffect( () => {
-        tg.onEvent('MainButtonClicked',onSendData)
+        tg.onEvent('mainButtonClicked',onSendData)
         return () =>{ 
-            tg.offEvent('MainButtonClicked',onSendData)
+            tg.offEvent('mainButtonClicked',onSendData)
         }
-
-
-    },[])
+    },[
+        country,
+        street,
+        subject
+    ])
     
 
 
