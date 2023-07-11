@@ -140,12 +140,13 @@ const UslugiList = () => {
         var request = new XMLHttpRequest();
         request.open('GET', requestURL);
         request.responseType = 'json';
-        //request.send();
-        //request.onload = function() {
-        //    var superHeroes = request.response;
-        //    populateHeader(superHeroes);
-        //    showHeroes(superHeroes);
-        //  }
+        request.send();
+        request.onload = function() {
+            var superHeroes = request.response;
+            //populateHeader(superHeroes);
+            //showHeroes(superHeroes);
+            aaa="нет ошибок пока"
+          }
         }
         catch(err){
             aaa=err.message;
