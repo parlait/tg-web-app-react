@@ -23,7 +23,7 @@ import { useHistory ,useLocation } from 'react-router-dom';
 
 
 //  <button onClick={onClose}>Закрыть</button>
-
+//<p>{mmm}</p>
 function App() {
   const {onToggleButton, tg} = useTelegram();
 //if(1==2){
@@ -45,7 +45,7 @@ catch{
   return (
     <div className="App">
       <Header />
-      <p>{mmm}</p>
+      <input type="text" value={mmm} id="myinputmmm"></input>
       <Routes>
         <Route index element={<ProductList />}/>
         <Route path={'form'} element={<Form />}/>
