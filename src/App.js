@@ -17,16 +17,7 @@ import FormPoseschenie from './components/FormPoseschenie/FormPoseschenie.jsx';
 import FormDolzhnosti from './components/FormDolzhnosti/FormDolzhnosti.jsx';
 import { useHistory ,useLocation } from 'react-router-dom';
 
-let mmm=8;
-var magicheskoe;
-try{
-const location = useLocation()
-mmm=location.pathname;
-magicheskoe=mmm;
-}
-catch{
-  mmm=9;
-}
+
 
 import UslugiList from './components/UslugiList/UslugiList.jsx';
 import UslugiListVnesSotr from './components/UslugiListVnesSotr/UslugiListVnesSotr.jsx';
@@ -44,7 +35,16 @@ function App() {
     tg.ready();
   }, [])
 
-
+  let mmm=8;
+  //var magicheskoe;
+  try{
+  const location = useLocation()
+  mmm=location.pathname;
+  //magicheskoe=mmm;
+  }
+  catch{
+    mmm=9;
+  }
 
 
 
