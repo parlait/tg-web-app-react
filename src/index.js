@@ -8,9 +8,10 @@ import {BrowserRouter} from "react-router-dom";
 */
 import {useLocation} from 'react-router-dom';
 let pathkusl=0;
+let pathkusl3=1;
 try{
   const location = useLocation();
-    pathkusl=location.pathname;//Route.path
+    pathkusl3=location.pathname;//Route.path
 }
 catch{
     pathkusl='errorrrrr';//Route.path
