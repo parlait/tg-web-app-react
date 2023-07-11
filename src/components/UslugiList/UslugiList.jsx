@@ -5,11 +5,7 @@ import {useCallback} from 'react';
 import './UslugiList.css';
 import {useTelegram} from '../hooks/useTelegram';
 import {Route, Routes} from "react-router-dom";
-import {
-    BrowserRouter as Router,
-    Switch,
-    useLocation,
-  } from 'react-router-dom';
+import {useLocation} from 'react-router-dom';
   /*
   {
   key: 'ac3df4', // отсутствует в HashHistory
@@ -47,7 +43,7 @@ now you can use the location object which has the following properties: key, pat
 //const {user, onClose} = useTelegram();
 let pathkusl;
 
-const location = useLocation();
+const location = useLocation;
 try{
     pathkusl=location.pathname;//Route.path
 }
