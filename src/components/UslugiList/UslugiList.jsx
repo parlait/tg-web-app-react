@@ -20,6 +20,24 @@ import {
     [userDefined]: true
   }
 }
+2
+
+First you have to import the useLocation hook
+
+import { useLocation } from "react-router-dom";
+then set
+
+const location = useLocation();
+
+now you can use the location object which has the following properties: key, pathname, search, hash, state
+
+{
+  key: 'ac3df4', // not with HashHistory!
+  pathname: '/somewhere',
+  search: '?some=search-string',
+  hash: '#howdy',
+  state: undefined
+}
 */
 // className={'header'}>
 //     <Button onClick={onClose}>Закрыть</Button>
@@ -27,7 +45,8 @@ import {
 //         {user?.username}
 //     </span>
 //const {user, onClose} = useTelegram();
-const pathkusl=useLocation.pathname;//Route.path
+const location = useLocation();
+const pathkusl=location.pathname;//Route.path
 //this.context.router.route.location.pathname
  
 const UslugiList = () => {
@@ -90,7 +109,7 @@ const UslugiList = () => {
             <input 
             className={'input'} 
             type="text" 
-            placeholder={'Страна' + pathkusl + ''}
+            placeholder={'Страна' + pathkusl}
          
             value={country} 
             onChange={onChangeCountry} 
