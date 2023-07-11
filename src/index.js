@@ -15,8 +15,8 @@ try{
 catch{
     pathkusl='errorrrrr';//Route.path
 }
-//export default pathkusl;
-console.log(pathkusl);
+export default pathkusl;
+//console.log(pathkusl);
 /*вставляю конец
 */
 const root = ReactDOM.createRoot(document.getElementById('root'));
