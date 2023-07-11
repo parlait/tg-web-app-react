@@ -31,14 +31,14 @@ function App() {
     tg.ready();
   }, [])
 
+  var min = 0;
+  document.getElementById("min").innerHTML = min;
+
 
   return (
     <div className="App">
       <Header />
-      <p>
-    Мы живём на сине-зелёной планете, на которой до сих пор так много
-    неизведанного.
-      </p>
+      <h1 id="time">Итог - <div id="min"></div> </h1>
       <Routes>
         <Route index element={<ProductList />}/>
         <Route path={'form'} element={<Form />}/>
