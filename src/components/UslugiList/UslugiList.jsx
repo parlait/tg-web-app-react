@@ -27,7 +27,7 @@ import {
 //         {user?.username}
 //     </span>
 //const {user, onClose} = useTelegram();
-const pathkusl=useLocation.pathname;//Route.path
+const pathkusl=useLocation().pathname;//Route.path
 //this.context.router.route.location.pathname
  
 const UslugiList = () => {
