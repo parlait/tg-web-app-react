@@ -57,7 +57,7 @@ now you can use the location object which has the following properties: key, pat
 
 //this.context.router.route.location.pathname
  
-const UslugiList = () => {
+const UslugiList = async () => {
      try{
     
     const [country, setCountry] = useState('');
@@ -129,8 +129,12 @@ const UslugiList = () => {
     let dannyejson='';
     let nnn='222';
     let aaa="ddd";
-        const naservere=true;
-        if(naservere==true){
+
+    //async () => {
+    //    let response = await fetch('/article/promise-chaining/user.json');
+     //   let user = await response.json();  
+    // };
+
             try{
         //let aaa='https://ИЗМЕНИТЬ'
         nnn = bbb.replace("/uslugilist/","").replace("/uslugilistvnessotr/","");
@@ -151,16 +155,17 @@ const UslugiList = () => {
         catch(err){
             aaa=err.message;
         }
-        }
+     
+        /*
         else{
             nnn = bbb.replace("/uslugilist/","").replace("/uslugilistvnessotr/","");
-            
             try{
             dannyejson =require('../uslugikompanii/' + nnn +'.json').stringify()//;
         }
         catch{dannyejson ="fgfgfgfg"}
         
         }
+        */
 
     return (
         <div className={"form"}>
