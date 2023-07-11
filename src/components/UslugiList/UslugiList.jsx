@@ -110,18 +110,18 @@ const UslugiList = () => {
         setSubject(e.target.value)
     }
 
-    let mmmn='sss';
+    //let mmmn='sss';
     let bbb ='dcd';
     try{
    //const location = window.useLocation();
    //useLocation()
    //mmmn=location.pathname;
    bbb=useLocation().pathname;
-   mmmn=magicheskoe;
+   //mmmn=magicheskoe;
     //ReactDom.document.getElementById('myinputmmm').value;
     }
         catch(er){
-     mmmn=er.message;
+     bbb="не найдено";
      
     }
     return (
@@ -130,7 +130,7 @@ const UslugiList = () => {
             <input 
             className={'input'} 
             type="text" 
-            placeholder={'Страна' + mmmn}
+            placeholder={'Страна'}
          
             value={country} 
             onChange={onChangeCountry} 
