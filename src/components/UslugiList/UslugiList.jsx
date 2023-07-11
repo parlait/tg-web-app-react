@@ -202,6 +202,6 @@ async function aaaa(bbbb){
             //showHeroes(superHeroes);
             aaa="нет ошибок пока"
             }
-          return(aaa);
+          return aaa;
 }
 export default UslugiList;
