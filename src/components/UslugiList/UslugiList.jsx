@@ -129,13 +129,12 @@ const UslugiList = () => {
     let dannyejson='';
     let nnn='222';
     let aaa="ddd";
-    
-
         const naservere=true;
         if(naservere==true){
             try{
         //let aaa='https://ИЗМЕНИТЬ'
         nnn = bbb.replace("/uslugilist/","").replace("/uslugilistvnessotr/","");
+        nnn="1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS"
         aaa="https://drive.google.com/file/d/" + nnn + "/view"
         var requestURL = aaa;
         var request = new XMLHttpRequest();
@@ -154,7 +153,7 @@ const UslugiList = () => {
         }
         else{
             nnn = bbb.replace("/uslugilist/","").replace("/uslugilistvnessotr/","");
-            nnn="1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS"
+            
             try{
             dannyejson =require('../uslugikompanii/' + nnn +'.json').stringify()//;
         }
@@ -177,7 +176,7 @@ const UslugiList = () => {
             <input 
             className={'input'} 
             type="text" 
-            placeholder={'Улица' + dannyejson} 
+            placeholder={'Улица' + aaa} 
         
             value={street} 
             onChange={onChangeStreet} 
