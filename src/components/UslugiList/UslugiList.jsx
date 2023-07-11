@@ -14,8 +14,8 @@ try{
    mmmn=magicheskoe;
     //ReactDom.document.getElementById('myinputmmm').value;
 }
-catch{
-     mmmn=9;
+catch(er){
+     mmmn=er.message;
 }
 //<input type="text" value={mmm} id="myinputmmm"></input>
 //try{
