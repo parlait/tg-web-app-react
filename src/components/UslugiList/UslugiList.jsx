@@ -2,7 +2,7 @@ import React from 'react';
 import {useState} from 'react';
 import {useEffect} from 'react';
 import {useCallback} from 'react';
-import './Form.css';
+import './UslugiList.css';
 import {useTelegram} from '../hooks/useTelegram';
 
 // className={'header'}>
@@ -13,7 +13,7 @@ import {useTelegram} from '../hooks/useTelegram';
 //const {user, onClose} = useTelegram();
 
  
-const Form = () => {
+const UslugiList = () => {
     
     const [country, setCountry] = useState('');
     const [street, setStreet] = useState('');
@@ -98,4 +98,4 @@ const Form = () => {
 
 };
 
-export default Form;
+export default UslugiList;
