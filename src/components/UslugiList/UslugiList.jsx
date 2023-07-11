@@ -113,7 +113,10 @@ const UslugiList = async () => {
     }
 
     //let mmmn='sss';
-    let bbb ='dcd';
+    let bbb ='';
+    let dannyejson='';
+    let nnn='222';
+    let aaa="ddd";
     try{
    //const location = window.useLocation();
    //useLocation()
@@ -121,21 +124,14 @@ const UslugiList = async () => {
    bbb=useLocation().pathname;
    //mmmn=magicheskoe;
     //ReactDom.document.getElementById('myinputmmm').value;
-    }
-        catch(er){
-     bbb="не найдено";
-     
-    }
-    let dannyejson='';
-    let nnn='222';
-    let aaa="ddd";
+
+
+
 
     //async () => {
     //    let response = await fetch('/article/promise-chaining/user.json');
      //   let user = await response.json();  
     // };
-
-            try{
         //let aaa='https://ИЗМЕНИТЬ'
         nnn = bbb.replace("/uslugilist/","").replace("/uslugilistvnessotr/","");
         nnn="1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS"
@@ -153,7 +149,8 @@ const UslugiList = async () => {
           }
         }
         catch(err){
-            aaa=err.message;
+                bbb="не найдено";
+                aaa=err.message;
         }
      
         /*
@@ -173,7 +170,7 @@ const UslugiList = async () => {
             <input 
             className={'input'} 
             type="text" 
-            placeholder={'Страна' + nnn}
+            placeholder={'Страна'}
          
             value={country} 
             onChange={onChangeCountry} 
