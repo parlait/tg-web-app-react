@@ -7,16 +7,17 @@ import {BrowserRouter} from "react-router-dom";
 /*вставляю начало
 */
 import {useLocation} from 'react-router-dom';
-let pathkusl=0;
+
 let pathkusl3=1;
 try{
   const location = useLocation();
     pathkusl3=location.pathname;//Route.path
 }
 catch{
-    pathkusl='errorrrrr';//Route.path
+    pathkusl3='errorrrrr';//Route.path
 }
-export default pathkusl;
+export const pathkusl = pathkusl3;
+
 //console.log(pathkusl);
 /*вставляю конец
 */
