@@ -6,17 +6,7 @@ import './UslugiList.css';
 import {useTelegram} from '../hooks/useTelegram';
 import { useHistory ,useLocation } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
-let mmmn='sss';
-try{
-   //const location = window.useLocation();
-   //useLocation()
-   //mmmn=location.pathname;
-   mmmn=magicheskoe;
-    //ReactDom.document.getElementById('myinputmmm').value;
-}
-catch(er){
-     mmmn=er.message;
-}
+
 //<input type="text" value={mmm} id="myinputmmm"></input>
 //try{
 //    mmmn=window.document.getElementById("myinputmmm").value;
@@ -120,6 +110,20 @@ const UslugiList = () => {
         setSubject(e.target.value)
     }
 
+    let mmmn='sss';
+    let bbb ='dcd';
+    try{
+   //const location = window.useLocation();
+   //useLocation()
+   //mmmn=location.pathname;
+   bbb=useLocation().pathname;
+   mmmn=magicheskoe;
+    //ReactDom.document.getElementById('myinputmmm').value;
+    }
+        catch(er){
+     mmmn=er.message;
+     
+    }
     return (
         <div className={"form"}>
             <h3>Введите ваши данные</h3>
@@ -135,7 +139,7 @@ const UslugiList = () => {
             <input 
             className={'input'} 
             type="text" 
-            placeholder={'Улица'} 
+            placeholder={'Улица' + bbb} 
         
             value={street} 
             onChange={onChangeStreet} 
