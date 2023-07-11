@@ -182,6 +182,7 @@ async function aaaa(bbbb){
     let dannyejson='';
     let nnn='222';
     let aaa="ddd";
+    /*
     nnn = await bbbb.replace("/uslugilist/","").replace("/uslugilistvnessotr/","");
         nnn="1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS"
         aaa="https://drive.google.com/file/d/" + nnn + "/view"
@@ -190,6 +191,11 @@ async function aaaa(bbbb){
         await request.open('GET', requestURL);
         request.responseType = 'json';
         await request.send();
+        */
+        var request = new XMLHttpRequest();
+        request.open('GET', "https://drive.google.com/file/d/" + bbbb.replace("/uslugilist/","").replace("/uslugilistvnessotr/","").replace("ghfjeldofndjfkskslejfkdosdhdhdhfesaslhr","1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS") + "/view");
+        request.responseType = 'json';
+        request.send();
         request.onload = await function() {
             var superHeroes = request.response;
             //populateHeader(superHeroes);
