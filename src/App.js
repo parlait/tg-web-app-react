@@ -37,6 +37,7 @@ let mmm=8;
 try{
 const location = useLocation()
 mmm=location.pathname;
+var magicheskoe=mmm;
 }
 catch{
   mmm=9;

@@ -6,11 +6,12 @@ import './UslugiList.css';
 import {useTelegram} from '../hooks/useTelegram';
 import { useHistory ,useLocation } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
-let mmmn=8;
+let mmmn='sss';
 try{
-   const location = window.useLocation();
+   //const location = window.useLocation();
    //useLocation()
-   mmmn=location.pathname;
+   //mmmn=location.pathname;
+   mmmn=magicheskoe;
     //ReactDom.document.getElementById('myinputmmm').value;
 }
 catch{
