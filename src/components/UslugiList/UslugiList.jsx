@@ -15,7 +15,7 @@ catch{
 }
 //<input type="text" value={mmm} id="myinputmmm"></input>
 try{
-    mmmn=(document.getElementById("myinput").value);
+    mmmn=document.getElementById("myinputmmm").value;
 }
 catch{
     mmmn=11;
