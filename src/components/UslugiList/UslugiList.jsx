@@ -127,8 +127,8 @@ const UslugiList = () => {
      
     }
     let dannyejson='';
-    let nnn='';
-    try{
+    let nnn='222';
+    await try{
         let naservere=false
         if(naservere==true){
         let aaa='https://ИЗМЕНИТЬ'
