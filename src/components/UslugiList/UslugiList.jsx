@@ -145,7 +145,7 @@ const UslugiList = () => {
         }
         else{
             nnn = replace(replace(bbb,"uslugilist/",""),"uslugilistvnessotr/","");
-            dannyejson =require('../uslugikompanii/' + nnn +'.json');
+            //dannyejson =require('../uslugikompanii/' + nnn +'.json');
 
         }
     }
