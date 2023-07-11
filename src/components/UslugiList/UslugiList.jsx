@@ -4,6 +4,15 @@ import {useEffect} from 'react';
 import {useCallback} from 'react';
 import './UslugiList.css';
 import {useTelegram} from '../hooks/useTelegram';
+import { useHistory ,useLocation } from 'react-router-dom';
+let mmmn=8;
+try{
+const location = useLocation()
+mmmn=location.pathname;
+}
+catch{
+  mmmn=9;
+}
 //import {pathkusl} from './index.js';
 
   /*
@@ -41,7 +50,7 @@ now you can use the location object which has the following properties: key, pat
 //         {user?.username}
 //     </span>
 //const {user, onClose} = useTelegram();
-let pathkusl2=0;
+//let pathkusl2=0;
 
 
 //this.context.router.route.location.pathname
@@ -106,7 +115,7 @@ const UslugiList = () => {
             <input 
             className={'input'} 
             type="text" 
-            placeholder={'Страна' + pathkusl2}
+            placeholder={'Страна' + mmmn}
          
             value={country} 
             onChange={onChangeCountry} 
