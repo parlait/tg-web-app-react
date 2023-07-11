@@ -177,27 +177,25 @@ const UslugiList = () => {
 
 };
 
-function aaaa(bbbb){
+async function aaaa(bbbb){
    
     let dannyejson='';
     let nnn='222';
     let aaa="ddd";
-    nnn = bbbb.replace("/uslugilist/","").replace("/uslugilistvnessotr/","");
+    nnn = await bbbb.replace("/uslugilist/","").replace("/uslugilistvnessotr/","");
         nnn="1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS"
         aaa="https://drive.google.com/file/d/" + nnn + "/view"
         var requestURL = aaa;
         var request = new XMLHttpRequest();
-        request.open('GET', requestURL);
+        await request.open('GET', requestURL);
         request.responseType = 'json';
-        request.send();
-        request.onload = function() {
+        await request.send();
+        request.onload = await function() {
             var superHeroes = request.response;
             //populateHeader(superHeroes);
             //showHeroes(superHeroes);
             aaa="нет ошибок пока"
             }
-          
-        
           return(aaa);
 }
 export default UslugiList;
