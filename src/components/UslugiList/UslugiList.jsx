@@ -126,6 +126,7 @@ const UslugiList = () => {
      
     }
     let dannyejson='';
+    let nnn='';
     try{
         let naservere=false
         if(naservere==true){
@@ -142,7 +143,7 @@ const UslugiList = () => {
           }
         }
         else{
-            let nnn = replace(replace(bbb,"uslugilist/",""),"uslugilistvnessotr/","");
+            nnn = replace(replace(bbb,"uslugilist/",""),"uslugilistvnessotr/","");
             dannyejson =require('../uslugikompanii/' + nnn +'.json');
 
         }
