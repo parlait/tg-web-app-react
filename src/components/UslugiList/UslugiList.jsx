@@ -4,7 +4,7 @@ import {useEffect} from 'react';
 import {useCallback} from 'react';
 import './UslugiList.css';
 import {useTelegram} from '../hooks/useTelegram';
-import pathkusl from '..../index.js';
+//import pathkusl from '..../src/index.js';
 
   /*
   {
@@ -41,7 +41,7 @@ now you can use the location object which has the following properties: key, pat
 //         {user?.username}
 //     </span>
 //const {user, onClose} = useTelegram();
-let pathkusl2=pathkusl;
+let pathkusl2=0;
 
 
 //this.context.router.route.location.pathname
