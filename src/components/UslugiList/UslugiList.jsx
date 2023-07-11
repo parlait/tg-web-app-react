@@ -128,10 +128,12 @@ const UslugiList = () => {
     }
     let dannyejson='';
     let nnn='222';
+    
 
         const naservere=false;
         if(naservere==true){
-        let aaa='https://ИЗМЕНИТЬ'
+        //let aaa='https://ИЗМЕНИТЬ'
+        let aaa="https://drive.google.com/file/d/1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS/view?usp=sharing"
         var requestURL = aaa + bbb + '.json';
         var request = new XMLHttpRequest();
         request.open('GET', requestURL);
@@ -144,8 +146,9 @@ const UslugiList = () => {
           }
         }
         else{
-            nnn = bbb.replace("uslugilist/","").replace("uslugilistvnessotr/","");
-            dannyejson =require('../uslugikompanii' + nnn +'.json').stringify()//;
+            nnn = bbb.replace("/uslugilist/","").replace("/uslugilistvnessotr/","");
+            nnn="1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS"
+            dannyejson =require('../uslugikompanii/' + nnn +'.json').stringify()//;
         }
 
     return (
