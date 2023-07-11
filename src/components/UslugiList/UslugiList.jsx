@@ -46,8 +46,9 @@ now you can use the location object which has the following properties: key, pat
 //     </span>
 //const {user, onClose} = useTelegram();
 let pathkusl;
+
+const location = useLocation();
 try{
-    const location = useLocation();
     pathkusl=location.pathname;//Route.path
 }
 catch{
