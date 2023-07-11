@@ -4,8 +4,9 @@ import {useEffect} from 'react';
 import {useCallback} from 'react';
 import './UslugiList.css';
 import {useTelegram} from '../hooks/useTelegram';
-import { useHistory ,useLocation } from 'react-router-dom';
-import ReactDOM from 'react-dom/client';
+import { useLocation } from 'react-router-dom';
+//import { useHistory ,useLocation } from 'react-router-dom';
+//import ReactDOM from 'react-dom/client';
 
 //<input type="text" value={mmm} id="myinputmmm"></input>
 //try{
