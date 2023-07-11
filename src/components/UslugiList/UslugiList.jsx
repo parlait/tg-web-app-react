@@ -8,7 +8,7 @@ import { useHistory ,useLocation } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 let mmmn=8;
 try{
-   const location = this.useLocation();
+   const location = window.useLocation();
    //useLocation()
    mmmn=location.pathname;
     //ReactDom.document.getElementById('myinputmmm').value;
