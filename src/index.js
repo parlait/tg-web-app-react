@@ -4,7 +4,20 @@ import './index.css';
 import App from './App';
 import {BrowserRouter} from "react-router-dom";
 //import reportWebVitals from './reportWebVitals';убрал
-
+/*вставляю начало
+*/
+import {useLocation} from 'react-router-dom';
+let pathkusl=0;
+try{
+  const location = useLocation();
+    pathkusl=location.pathname;//Route.path
+}
+catch{
+    pathkusl='errorrrrr';//Route.path
+}
+export default pathkusl;
+/*вставляю конец
+*/
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
