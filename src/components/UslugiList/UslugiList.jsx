@@ -4,14 +4,14 @@ import {useEffect} from 'react';
 import {useCallback} from 'react';
 import './UslugiList.css';
 import {useTelegram} from '../hooks/useTelegram';
-
+import {Route, Routes} from "react-router-dom";
 // className={'header'}>
 //     <Button onClick={onClose}>Закрыть</Button>
 //     <span className={'username'}>
 //         {user?.username}
 //     </span>
 //const {user, onClose} = useTelegram();
-
+const pathkusl=Route.path
  
 const UslugiList = () => {
     
@@ -73,7 +73,7 @@ const UslugiList = () => {
             <input 
             className={'input'} 
             type="text" 
-            placeholder={'Страна'}
+            placeholder={'Страна' + pathkusl + ''}
          
             value={country} 
             onChange={onChangeCountry} 
