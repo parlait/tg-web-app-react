@@ -5,7 +5,7 @@ import App from './App';
 import {BrowserRouter} from "react-router-dom";
 //import reportWebVitals from './reportWebVitals';убрал
 /*вставляю начало
-*/
+
 import {useLocation} from 'react-router-dom';
 
 let pathkusl3=1;
@@ -20,7 +20,6 @@ let pathkusl = pathkusl3;
 export default pathkusl;
 
 //console.log(pathkusl);
-/*вставляю конец
 */
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
