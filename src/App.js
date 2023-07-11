@@ -32,11 +32,13 @@ function App() {
   }, [])
 
 
-
-
   return (
     <div className="App">
       <Header />
+      <p>
+    Мы живём на сине-зелёной планете, на которой до сих пор так много
+    неизведанного.
+      </p>
       <Routes>
         <Route index element={<ProductList />}/>
         <Route path={'form'} element={<Form />}/>
