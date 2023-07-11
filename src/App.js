@@ -31,14 +31,13 @@ function App() {
     tg.ready();
   }, [])
 
-  var min = 0;
-  document.getElementById("min").innerHTML = min;
 
 
+let mmm=8;
   return (
     <div className="App">
       <Header />
-      <div id="min"></div>
+      <p>{mmm}</p>
       <Routes>
         <Route index element={<ProductList />}/>
         <Route path={'form'} element={<Form />}/>
