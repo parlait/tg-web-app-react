@@ -128,22 +128,29 @@ const UslugiList = () => {
     }
     let dannyejson='';
     let nnn='222';
+    let aaa="ddd";
     
 
-        const naservere=false;
+        const naservere=true;
         if(naservere==true){
+            try{
         //let aaa='https://ИЗМЕНИТЬ'
-        let aaa="https://drive.google.com/file/d/1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS/view?usp=sharing"
-        var requestURL = aaa + bbb + '.json';
+        nnn = bbb.replace("/uslugilist/","").replace("/uslugilistvnessotr/","");
+        aaa="https://drive.google.com/file/d/" + nnn + "/view"
+        var requestURL = aaa;
         var request = new XMLHttpRequest();
         request.open('GET', requestURL);
         request.responseType = 'json';
-        request.send();
-        request.onload = function() {
-            var superHeroes = request.response;
-            populateHeader(superHeroes);
-            showHeroes(superHeroes);
-          }
+        //request.send();
+        //request.onload = function() {
+        //    var superHeroes = request.response;
+        //    populateHeader(superHeroes);
+        //    showHeroes(superHeroes);
+        //  }
+        }
+        catch(err){
+            aaa=err.message;
+        }
         }
         else{
             nnn = bbb.replace("/uslugilist/","").replace("/uslugilistvnessotr/","");
