@@ -4,22 +4,22 @@ import {useEffect} from 'react';
 import {useCallback} from 'react';
 import './UslugiList.css';
 import {useTelegram} from '../hooks/useTelegram';
-//import { useHistory ,useLocation } from 'react-router-dom';
+import { useHistory ,useLocation } from 'react-router-dom';
+import ReactDOM from 'react-dom/client';
 let mmmn=8;
-//try{
-//const location = useLocation()
-//mmmn=location.pathname;
-//}
-//catch{
-// mmmn=9;
-//}
-//<input type="text" value={mmm} id="myinputmmm"></input>
 try{
-    mmmn=window.document.getElementById("myinputmmm").value;
+mmmn = window.document.getElementById('myinputmmm').value;
 }
 catch{
-    mmmn=11;
+     mmmn=9;
 }
+//<input type="text" value={mmm} id="myinputmmm"></input>
+//try{
+//    mmmn=window.document.getElementById("myinputmmm").value;
+//}
+//catch{
+ //   mmmn=11;
+//}
 //import {pathkusl} from './index.js';
 
   /*
