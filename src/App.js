@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <h1 id="time">Итог - <div id="min"></div> </h1>
+      <div id="min"></div>
       <Routes>
         <Route index element={<ProductList />}/>
         <Route path={'form'} element={<Form />}/>
