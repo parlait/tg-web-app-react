@@ -3,7 +3,7 @@ import {useState} from 'react';
 import {useEffect} from 'react';
 import {useCallback} from 'react';
 import './UslugiList.css';
-import {useTelegram} from '../hooks/useTelegram';
+import {useTelegram} from './components/hooks/useTelegram';
 //import pathkusl from '..../src/index.js';
 
   /*

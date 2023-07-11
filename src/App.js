@@ -14,7 +14,7 @@ import FormRaspisanie from './components/FormRaspisanie/FormRaspisanie.jsx';
 import FormSotrudnik from './components/FormSotrudnik/FormSotrudnik.jsx';
 import FormUsluga from './components/FormUsluga/FormUsluga.jsx';
 import FormPoseschenie from './components/FormPoseschenie/FormPoseschenie.jsx';
-import UslugiList from './components/UslugiList/UslugiList.jsx';
+import UslugiList from './UslugiList.jsx';
 import UslugiListVnesSotr from './components/UslugiListVnesSotr/UslugiListVnesSotr.jsx';
 import FormDolzhnosti from './components/FormDolzhnosti/FormDolzhnosti.jsx';
 
