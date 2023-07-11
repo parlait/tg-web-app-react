@@ -8,8 +8,10 @@ import { useHistory ,useLocation } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 let mmmn=8;
 try{
-    mmmn=ReactDom.document.getElementById('myinputmmm').value;
-
+   const location = this.useLocation();
+   //useLocation()
+   mmmn=location.pathname;
+    //ReactDom.document.getElementById('myinputmmm').value;
 }
 catch{
      mmmn=9;
