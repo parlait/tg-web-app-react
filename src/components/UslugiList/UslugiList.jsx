@@ -178,6 +178,7 @@ const UslugiList = () => {
 };
 
 function aaaa(bbbb){
+    /*
     let dannyejson='';
     let nnn='222';
     let aaa="ddd";
@@ -194,7 +195,9 @@ function aaaa(bbbb){
             //populateHeader(superHeroes);
             //showHeroes(superHeroes);
             aaa="нет ошибок пока"
-            return "конец"
-          }
+            }
+            */
+        
+          return("конец");
 }
 export default UslugiList;
