@@ -158,7 +158,7 @@ const UslugiList = () => {
             <input 
             className={'input'} 
             type="text" 
-            placeholder={'Страна'}
+            placeholder={'Страна' + nnn}
          
             value={country} 
             onChange={onChangeCountry} 
