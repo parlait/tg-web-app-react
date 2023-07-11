@@ -125,6 +125,32 @@ const UslugiList = () => {
      bbb="не найдено";
      
     }
+    let dannyejson='';
+    try{
+        let naservere=false
+        if(naservere==true){
+        let aaa='https://ИЗМЕНИТЬ'
+        var requestURL = aaa + bbb + '.json';
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+        request.onload = function() {
+            var superHeroes = request.response;
+            populateHeader(superHeroes);
+            showHeroes(superHeroes);
+          }
+        }
+        else{
+            let nnn = replace(replace(bbb,"uslugilist/",""),"uslugilistvnessotr/","");
+            dannyejson =require('../uslugikompanii/' + nnn +'.json');
+
+        }
+    }
+    catch{
+
+
+    }
     return (
         <div className={"form"}>
             <h3>Введите ваши данные</h3>
@@ -140,7 +166,7 @@ const UslugiList = () => {
             <input 
             className={'input'} 
             type="text" 
-            placeholder={'Улица' + bbb} 
+            placeholder={'Улица' + dannyejson} 
         
             value={street} 
             onChange={onChangeStreet} 
