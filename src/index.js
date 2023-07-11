@@ -16,7 +16,8 @@ try{
 catch{
     pathkusl3='errorrrrr';//Route.path
 }
-export const pathkusl = pathkusl3;
+let pathkusl = pathkusl3;
+export default pathkusl;
 
 //console.log(pathkusl);
 /*вставляю конец

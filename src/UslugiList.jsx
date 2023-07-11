@@ -4,7 +4,7 @@ import {useEffect} from 'react';
 import {useCallback} from 'react';
 import './UslugiList.css';
 import {useTelegram} from './components/hooks/useTelegram';
-import pathkusl from './index.js';
+import {pathkusl} from './index.js';
 
   /*
   {
