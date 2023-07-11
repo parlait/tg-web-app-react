@@ -58,6 +58,7 @@ now you can use the location object which has the following properties: key, pat
 //this.context.router.route.location.pathname
  
 const UslugiList = () => {
+    try{
     
     const [country, setCountry] = useState('');
     const [street, setStreet] = useState('');
@@ -180,7 +181,36 @@ const UslugiList = () => {
         </div>
     );
 //select value={subject} onChange={onChangeSubject} className=
-
+}
+catch{
+    return (
+        <div className={"form"}>
+            <h3>Введите ваши данные</h3>
+            <input 
+            className={'input'} 
+            type="text" 
+            placeholder={'ошибка'}
+         
+            value={country} 
+            onChange={onChangeCountry} 
+          
+            />
+            <input 
+            className={'input'} 
+            type="text" 
+            placeholder={'Ошибка'} 
+        
+            value={street} 
+            onChange={onChangeStreet} 
+       
+            />
+            <select value={subject} onChange={onChangeSubject} className={'select'}>
+                <option value={'physical'}>ошибка</option>
+                <option value={'legal'}>ошибка</option>
+            </select>
+        </div>
+    );
+}
 };
 
 export default UslugiList;
