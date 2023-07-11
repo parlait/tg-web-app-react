@@ -57,7 +57,7 @@ now you can use the location object which has the following properties: key, pat
 
 //this.context.router.route.location.pathname
  
-const UslugiList = async () => {
+const UslugiList = () => {
      
     
     const [country, setCountry] = useState('');
@@ -124,10 +124,6 @@ const UslugiList = async () => {
    bbb=useLocation().pathname;
    //mmmn=magicheskoe;
     //ReactDom.document.getElementById('myinputmmm').value;
-
-
-
-
     //async () => {
     //    let response = await fetch('/article/promise-chaining/user.json');
      //   let user = await response.json();  
