@@ -58,7 +58,7 @@ now you can use the location object which has the following properties: key, pat
 //this.context.router.route.location.pathname
  
 const UslugiList = () => {
-    try{
+     try{
     
     const [country, setCountry] = useState('');
     const [street, setStreet] = useState('');
@@ -128,8 +128,8 @@ const UslugiList = () => {
     }
     let dannyejson='';
     let nnn='222';
-    await try{
-        let naservere=false
+
+        const naservere=false;
         if(naservere==true){
         let aaa='https://ИЗМЕНИТЬ'
         var requestURL = aaa + bbb + '.json';
@@ -146,13 +146,8 @@ const UslugiList = () => {
         else{
             nnn = replace(replace(bbb,"uslugilist/",""),"uslugilistvnessotr/","");
             //dannyejson =require('../uslugikompanii/' + nnn +'.json');
-
         }
-    }
-    catch{
-        let dannyejson='eee';
 
-    }
     return (
         <div className={"form"}>
             <h3>Введите ваши данные</h3>
