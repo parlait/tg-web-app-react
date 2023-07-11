@@ -148,7 +148,11 @@ const UslugiList = () => {
         else{
             nnn = bbb.replace("/uslugilist/","").replace("/uslugilistvnessotr/","");
             nnn="1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS"
+            try{
             dannyejson =require('../uslugikompanii/' + nnn +'.json').stringify()//;
+        }
+        catch{dannyejson ="fgfgfgfg"}
+        
         }
 
     return (
