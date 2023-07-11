@@ -17,7 +17,7 @@ import FormPoseschenie from './components/FormPoseschenie/FormPoseschenie.jsx';
 import UslugiList from './components/UslugiList/UslugiList.jsx';
 import UslugiListVnesSotr from './components/UslugiListVnesSotr/UslugiListVnesSotr.jsx';
 import FormDolzhnosti from './components/FormDolzhnosti/FormDolzhnosti.jsx';
-
+import { useHistory ,useLocation } from 'react-router-dom';
 //const {user, onClose} = useTelegram();
 
 
@@ -34,6 +34,14 @@ function App() {
 
 
 let mmm=8;
+try{
+const location = useLocation()
+mmm=location.pathname;
+}
+catch{
+  mmm=9;
+}
+
   return (
     <div className="App">
       <Header />
