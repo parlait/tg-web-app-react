@@ -5,13 +5,30 @@ import {useCallback} from 'react';
 import './UslugiList.css';
 import {useTelegram} from '../hooks/useTelegram';
 import {Route, Routes} from "react-router-dom";
+import {
+    BrowserRouter as Router,
+    Switch,
+    useLocation,
+  } from 'react-router-dom';
+  /*
+  {
+  key: 'ac3df4', // отсутствует в HashHistory
+  pathname: '/somewhere',
+  search: '?some=search-string',
+  hash: '#howdy',
+  state: {
+    [userDefined]: true
+  }
+}
+*/
 // className={'header'}>
 //     <Button onClick={onClose}>Закрыть</Button>
 //     <span className={'username'}>
 //         {user?.username}
 //     </span>
 //const {user, onClose} = useTelegram();
-const pathkusl=Route.path
+const pathkusl=useLocation.pathname;//Route.path
+//this.context.router.route.location.pathname
  
 const UslugiList = () => {
     
