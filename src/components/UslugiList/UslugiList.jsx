@@ -13,6 +13,13 @@ mmmn=location.pathname;
 catch{
   mmmn=9;
 }
+//<input type="text" value={mmm} id="myinputmmm"></input>
+try{
+    mmmn=(document.getElementById("myinput").value);
+}
+catch{
+    mmmn=11;
+}
 //import {pathkusl} from './index.js';
 
   /*
