@@ -145,7 +145,7 @@ const UslugiList = () => {
         }
         else{
             nnn = bbb.replace("uslugilist/","").replace("uslugilistvnessotr/","");
-            dannyejson =require('../uslugikompanii' + nnn +'.json').stringify;
+            dannyejson ='../uslugikompanii' + nnn +'.json'//)'require(.stringify;
         }
 
     return (
