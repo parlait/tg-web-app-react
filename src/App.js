@@ -47,8 +47,8 @@ function App() {
         <Route path={'formsotrudnik'} element={<FormSotrudnik />}/>
         <Route path={'formusluga'} element={<FormUsluga />}/>
         <Route path={'formposeschenie'} element={<FormPoseschenie />}/>
-        <Route path={'uslugilist'} element={<UslugiList />}/>
-        <Route path={'uslugilistvnessotr'} element={<UslugiListVnesSotr />}/>
+        <Route path={'uslugilist*'} element={<UslugiList />}/>
+        <Route path={'uslugilistvnessotr*'} element={<UslugiListVnesSotr />}/>
         <Route path={'formdolzhnosti'} element={<FormDolzhnosti />}/>
       </Routes>
     
