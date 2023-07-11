@@ -45,8 +45,15 @@ now you can use the location object which has the following properties: key, pat
 //         {user?.username}
 //     </span>
 //const {user, onClose} = useTelegram();
-const location = useLocation();
-const pathkusl=location.pathname;//Route.path
+let pathkusl;
+try{
+    const location = useLocation();
+    pathkusl=location.pathname;//Route.path
+}
+catch{
+    pathkusl='errorrrrr';//Route.path
+}
+
 //this.context.router.route.location.pathname
  
 const UslugiList = () => {
