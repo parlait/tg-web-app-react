@@ -1,0 +1,9 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-cintent: center;
+}
+.item {
+    margin-rigth: 10px;
+    margin-bottom: 10px;
+}

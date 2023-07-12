@@ -145,8 +145,8 @@ const UslugiList = () => {
         }
         */
 
-    return (aaaa(bbbb));
-        /*
+    return (
+        
         <div className={"form"}>
             <h3>Введите ваши данные</h3>
             <input 
@@ -173,7 +173,7 @@ const UslugiList = () => {
             </select>
         </div>
     );
-    */
+    
 //select value={subject} onChange={onChangeSubject} className=
 
 
