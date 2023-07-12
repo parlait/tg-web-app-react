@@ -34,7 +34,7 @@ function App() {
   useEffect(() => {
     tg.ready();
   }, [])
-
+/*
   let mmm=8;
   //var magicheskoe;
   try{
@@ -45,13 +45,14 @@ function App() {
   catch{
     mmm=9;
   }
+  */
 
-
+//<input type="text" value={mmm} id="myinputmmm"></input>
 
   return (
     <div className="App">
       <Header />
-      <input type="text" value={mmm} id="myinputmmm"></input>
+      
       <Routes>
         <Route index element={<ProductList />}/>
         <Route path={'form'} element={<Form />}/>
