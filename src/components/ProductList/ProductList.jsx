@@ -26,9 +26,9 @@ const getTotalPrice = (items = []) => {
  
 const ProductList = () => {
     
-    const [country, setCountry] = useState('');//
-    const [street, setStreet] = useState('');//
-    const [subject, setSubject] = useState('physical');//
+ //   const [country, setCountry] = useState('');//
+ //   const [street, setStreet] = useState('');//
+ //   const [subject, setSubject] = useState('physical');//
     
     const {tg,queryId} = useTelegram();
   
