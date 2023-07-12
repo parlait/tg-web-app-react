@@ -145,7 +145,8 @@ const UslugiList = () => {
         }
         */
 
-    return (
+    return (aaaa(bbbb));
+        /*
         <div className={"form"}>
             <h3>Введите ваши данные</h3>
             <input 
@@ -172,6 +173,7 @@ const UslugiList = () => {
             </select>
         </div>
     );
+    */
 //select value={subject} onChange={onChangeSubject} className=
 
 
@@ -186,7 +188,33 @@ async function logMovies() {
   async function aaaa(bbbb){
     const response = await fetch("https://drive.google.com/file/d/" + bbbb.replace("/uslugilist/","").replace("/uslugilistvnessotr/","").replace("ghfjeldofndjfkskslejfkdosdhdhdhfesaslhr","1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS") + "/view");
     const movies = await response.json();
-    return movies;
+    //return movies;
+    return(  <div className={"form"}>
+    <h3>Введите ваши данные</h3>
+    <input 
+    className={'input'} 
+    type="text" 
+    placeholder={'Страна'}
+ 
+    value={country} 
+    onChange={onChangeCountry} 
+  
+    />
+    <input 
+    className={'input'} 
+    type="text" 
+    placeholder={'Улица'} 
+
+    value={street} 
+    onChange={onChangeStreet} 
+
+    />
+    <select value={subject} onChange={onChangeSubject} className={'select'}>
+        <option value={'physical'}>Физ. лицо</option>
+        <option value={'legal'}>Юр. лицо</option>
+    </select>
+</div>
+);
   }
 async function aaaaudakit(bbbb){
    
