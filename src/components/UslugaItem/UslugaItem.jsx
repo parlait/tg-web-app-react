@@ -8,6 +8,7 @@ const UslugaItem = ({product, className, onAdd}) => {
         onAdd(product);
     }
 // <div className={'img'}/>
+
     return (
         <div className={'product ' + className}>
            
@@ -15,6 +16,15 @@ const UslugaItem = ({product, className, onAdd}) => {
             <div className={'description'}>{product.description}</div>
             <div className={'price'}>
                 <span>Стоимость: <b>{product.price}</b></span>
+            </div>
+            <div className={'listsotrudnikovuslugi'}>
+            {sotrudnkiuslugi.map(item => (
+            <SotrudnikpoUslugeItem
+                dolzhnost={item}
+                imya={onAdd}
+                className={'sotr'}
+            />
+            ))}
             </div>
             <Button className={'add-btn'} onClick={onAddHandler}>
                 Добавить в корзину
