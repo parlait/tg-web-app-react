@@ -108,10 +108,8 @@ const onAdd = (product) => {
 }
 
 return (
-    <div className={"form"}>
-        <h3>Введите ваши данные</h3>
-    </div>
     /*
+    */
     <div className={'list'}>
         {products.map(item => (
             <ProductItem
@@ -121,7 +119,7 @@ return (
             />
         ))}
     </div>
-*/
+
 );
 
 };
