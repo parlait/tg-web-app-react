@@ -2,7 +2,7 @@ import React from 'react';
 import {useState} from 'react';
 import {useEffect} from 'react';
 import {useCallback} from 'react';
-import './UslugaList.css';
+import './UslugiList.css';
 import {useTelegram} from '../hooks/useTelegram';
 import UslugaItem from '../UslugaItem/UslugaItem.jsx';
 
@@ -24,7 +24,7 @@ const getTotalPrice = (items = []) => {
 }
 
  
-const UslugaList = () => {
+const UslugiList = () => {
     
  //   const [country, setCountry] = useState('');//
  //   const [street, setStreet] = useState('');//
@@ -120,7 +120,7 @@ return (
 );
 
 };
-export default UslugaList;
+export default UslugiList;
 
 
 
