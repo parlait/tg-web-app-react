@@ -1,9 +1,10 @@
 .list {
     display: flex;
     flex-wrap: wrap;
-    justify-cintent: center;
+    justify-content: center;
 }
+
 .item {
-    margin-rigth: 10px;
+    margin-right: 10px;
     margin-bottom: 10px;
 }
