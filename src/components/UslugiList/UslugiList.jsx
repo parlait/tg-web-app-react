@@ -177,7 +177,18 @@ const UslugiList = () => {
 
 };
 
-async function aaaa(bbbb){
+async function logMovies() {
+    const response = await fetch("http://example.com/movies.json");
+    const movies = await response.json();
+    console.log(movies);
+  }
+
+  async function aaaa(bbbb){
+    const response = await fetch("https://drive.google.com/file/d/" + bbbb.replace("/uslugilist/","").replace("/uslugilistvnessotr/","").replace("ghfjeldofndjfkskslejfkdosdhdhdhfesaslhr","1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS") + "/view");
+    const movies = await response.json();
+    return movies;
+  }
+async function aaaaudakit(bbbb){
    
     let dannyejson='';
     let nnn='222';
