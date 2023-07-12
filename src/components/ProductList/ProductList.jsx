@@ -16,13 +16,13 @@ const products = [
     {id: '7', title: 'Джинсы 4', price: 5500, description: 'Синего цвета, прямые'},
     {id: '8', title: 'Куртка 5', price: 12000, description: 'Зеленого цвета, теплая'},
 ]
-/*
+
 const getTotalPrice = (items = []) => {
     return items.reduce((acc, item) => {
         return acc += item.price
     }, 0)
 }
-*/
+
  
 const ProductList = () => {
     
@@ -33,84 +33,57 @@ const ProductList = () => {
     const {tg,queryId} = useTelegram();
   
     const [addedItems, setAddedItems] = useState([]);
-      /*
-    */
 
-    const onSendData = useCallback( () =>{ 
+    const onSendData = useCallback(() => {
         const data = {
-            country,
-            street,
-            subject
+            products: addedItems,
+            totalPrice: getTotalPrice(addedItems),
+            queryId,
         }
-        tg.sendData(JSON.stringify(data));
-    },[country,street,subject])
+        
+        //fetch('http://85.119.146.179:8000/web-data', {
+        fetch('http://localhost:8000',{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+        
+       
+    }, [addedItems])
+    
+
+    
+    //const onSendData = useCallback( () =>{ //
+     //   const data = {//
+     //       country,//
+    //        street,//
+     //       subject//
+    //    }//
+    //    tg.sendData(JSON.stringify(data));//
+    //},[country,street,subject])//
+
     useEffect( () => {
         tg.onEvent('mainButtonClicked',onSendData)
         return () =>{ 
             tg.offEvent('mainButtonClicked',onSendData)
         }
-    },[onSendData])
-    
+    }, [onSendData])
 
 
 
-    useEffect( () => {
-        tg.MainButton.setParams({
-            text: 'Отправить данные'
-        })
+    useEffect( () => {//
+        tg.MainButton.setParams({//
+            text: 'Отправить данные'//
+        })//
 
-    },[])
+    },[])//
    
 
 
-    useEffect( () => {
-            if(!street || !country) {
-                tg.MainButton.hide();
-            } else {
-                tg.MainButton.show();
-            }
-    },[country, street])
-     
-    const onChangeCountry = (e) => {
-        setCountry(e.target.value)
-    }
-    const onChangeStreet = (e) => {
-        setStreet(e.target.value)
-    }
-    const onChangeSubject = (e) => {
-        setSubject(e.target.value)
-    }
 
 
-
-/*
-
-
-const onSendData = useCallback(() => {
-    const data = {
-        products: addedItems,
-        totalPrice: getTotalPrice(addedItems),
-        queryId,
-    }
-    
-    //fetch('http://85.119.146.179:8000/web-data', {
-    fetch('http://localhost:8000',{
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data)
-    })
-    
-   
-}, [addedItems])
-
-useEffect(() => {
-    tg.onEvent('mainButtonClicked', onSendData)
-    return () => {
-        tg.offEvent('mainButtonClicked', onSendData)
-    }
-}, [onSendData])
 
 const onAdd = (product) => {
     const alreadyAdded = addedItems.find(item => item.id === product.id);
@@ -133,32 +106,10 @@ const onAdd = (product) => {
         })
     }
 }
-*/
+
 return (
     <div className={"form"}>
         <h3>Введите ваши данные</h3>
-        <input 
-        className={'input'} 
-        type="text" 
-        placeholder={'Страна'}
-     
-        value={country} 
-        onChange={onChangeCountry} 
-      
-        />
-        <input 
-        className={'input'} 
-        type="text" 
-        placeholder={'Улица'} 
-    
-        value={street} 
-        onChange={onChangeStreet} 
-   
-        />
-        <select value={subject} onChange={onChangeSubject} className={'select'}>
-            <option value={'physical'}>Физ. лицо</option>
-            <option value={'legal'}>Юр. лицо</option>
-        </select>
     </div>
     /*
     <div className={'list'}>
