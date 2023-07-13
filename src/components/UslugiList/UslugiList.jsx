@@ -15,7 +15,7 @@ const getTotalPrice = (items = []) => {
 }
 
  
-const UslugiList = () => {
+const UslugiList = async () => {
     
  //   const [country, setCountry] = useState('');//
  //   const [street, setStreet] = useState('');//
@@ -117,7 +117,7 @@ const getjsonFiliala= async () => {
     } catch {itogdata='Error >>>' + 'сообщение не удалось вывести об ошибке'}
   }
 }
-getjsonFiliala()
+await getjsonFiliala()
 const products = [
     {id: '1', title: 'Наращивание', price: 2000, description: 'включен классический маникюр, снятие, покрытие'},
     {id: '2', title: 'Удаление лака', price: 200, description: 'на 10 ногтях снятие геля, акрила,обычного лака'},
