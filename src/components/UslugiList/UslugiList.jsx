@@ -6,12 +6,7 @@ import './UslugiList.css';
 import {useTelegram} from '../hooks/useTelegram';
 import UslugaItem from '../UslugaItem/UslugaItem.jsx';
 
-const products = [
-    {id: '1', title: 'Наращивание', price: 2000, description: 'включен классический маникюр, снятие, покрытие'},
-    {id: '2', title: 'Удаление лака', price: 200, description: 'на 10 ногтях снятие геля, акрила,обычного лака'},
-    {id: '3', title: 'Покрытие под кутикулу', price: 5000, description: 'покрытие под кутикулу гель-лаком или обычным лаком'},
-    {id: '4', title: 'Обрезной маникюр', price: 122, description: 'маникюр ножничками с коррекцией формы и длины и снятием'},
-]
+
 
 const getTotalPrice = (items = []) => {
     return items.reduce((acc, item) => {
@@ -99,10 +94,40 @@ const onAdd = (product) => {
         })
     }
 }
+let kodFiliala;
+kodFiliala=useLocation().pathname.replace("/uslugilist/","");
 
+let zamenimputnagoogle=true;
+if(zamenimputnagoogle==true){
+    kodFiliala=kodFiliala.replace("ghfjeldofndjfkskslejfkdosdhdhdhfesaslhr","1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS") + "/view";
+}
+let putkfilialu ="https://drive.google.com/file/d/" + kodFiliala;
+
+const getjsonFiliala= async () => {
+    let itogdata;
+    try {
+    const response = await fetch(putkfilialu);
+    const data = await response.json();
+    itogdata=data.stringify;
+    //console.log(data)
+  } catch(err) {
+    //console.log('Error >>>', err)
+    try{
+        itogdata='Error >>>' + err.message;
+    } catch {itogdata='Error >>>' + 'сообщение не удалось вывести об ошибке'}
+  }
+}
+getjsonFiliala()
+const products = [
+    {id: '1', title: 'Наращивание', price: 2000, description: 'включен классический маникюр, снятие, покрытие'},
+    {id: '2', title: 'Удаление лака', price: 200, description: 'на 10 ногтях снятие геля, акрила,обычного лака'},
+    {id: '3', title: 'Покрытие под кутикулу', price: 5000, description: 'покрытие под кутикулу гель-лаком или обычным лаком'},
+    {id: '4', title: 'Обрезной маникюр', price: 122, description: 'маникюр ножничками с коррекцией формы и длины и снятием'},
+]
 return (
-    /*
-    */
+    <p>itogdata</p>
+    /*вернуть
+   
     <div className={'list'}>
         {products.map(item => (
             <UslugaItem
@@ -112,6 +137,7 @@ return (
             />
         ))}
     </div>
+ вернуть*/
 
 );
 
