@@ -124,8 +124,8 @@ const products = [
     {id: '3', title: 'Покрытие под кутикулу', price: 5000, description: 'покрытие под кутикулу гель-лаком или обычным лаком'},
     {id: '4', title: 'Обрезной маникюр', price: 122, description: 'маникюр ножничками с коррекцией формы и длины и снятием'},
 ]
-const summm= (q,p) => {q+p} 
-await summm(2,3)
+//const summm= (q,p) => {q+p} 
+//await summm(2,3)
 return (
     <p>{itogdata}</p>
     /*вернуть
