@@ -136,10 +136,10 @@ function getjsonFiliala2() {
 }
 function getjsonFiliala3() {
     try {
-        
     //const response = fetch(putkfilialu);
     //const data = response.json();
-    itogdata=JSON.stringify(datajjj);
+    //itogdata=JSON.stringify(datajjj);
+    itogdata=datajjj.name;
     //console.log(data)
   } catch(err) {
     //console.log('Error >>>', err)
