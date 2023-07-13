@@ -6,7 +6,7 @@ import './UslugiList.css';
 import {useTelegram} from '../hooks/useTelegram';
 import UslugaItem from '../UslugaItem/UslugaItem.jsx';
 import { useLocation } from 'react-router-dom';
-import datajjj from "./ttt.json";
+import datajjj from "../uslugipofilialam/ttt.json";
 
 const getTotalPrice = (items = []) => {
     return items.reduce((acc, item) => {
@@ -139,7 +139,7 @@ function getjsonFiliala3() {
     //const response = fetch(putkfilialu);
     //const data = response.json();
     //itogdata=JSON.stringify(datajjj);
-    itogdata=datajjj.name;
+    itogdata=putkfilialu;//datajjj.name;
     //console.log(data)
   } catch(err) {
     //console.log('Error >>>', err)

@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from "../Button/Button";
 import './UslugaItem.css';
-
+import datajjj from "../uslugipofilialam/ttt.json";
 const UslugaItem = ({product, className, onAdd}) => {
 
     const onAddHandler = () => {
