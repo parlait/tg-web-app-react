@@ -125,7 +125,7 @@ const products = [
     {id: '4', title: 'Обрезной маникюр', price: 122, description: 'маникюр ножничками с коррекцией формы и длины и снятием'},
 ]
 return (
-    <p>itogdata</p>
+    <p>{itogdata}</p>
     /*вернуть
    
     <div className={'list'}>
