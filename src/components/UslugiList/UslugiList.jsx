@@ -8,6 +8,7 @@ import UslugaItem from '../UslugaItem/UslugaItem.jsx';
 import { useLocation } from 'react-router-dom';
 import datajjj from "../uslugipofilialam/ttt.json";
 
+const kodFiliala2=useLocation().pathname.replace("/uslugilist/","");
 const getTotalPrice = (items = []) => {
     return items.reduce((acc, item) => {
         return acc += item.price
@@ -139,7 +140,7 @@ function getjsonFiliala3() {
     //const response = fetch(putkfilialu);
     //const data = response.json();
     //itogdata=JSON.stringify(datajjj);
-    itogdata=putkfilialu;//datajjj.name;
+    itogdata=kodFiliala2//putkfilialu;//datajjj.name;
     //console.log(data)
   } catch(err) {
     //console.log('Error >>>', err)
