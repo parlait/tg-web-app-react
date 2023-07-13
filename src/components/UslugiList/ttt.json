@@ -1,0 +1,14 @@
+{
+    "name": "1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS",
+    "versiya": "1",
+    "estVybor":{
+        "filial": true,
+        "gorod": true,
+        "rayon": true,
+        "strana": true,
+        "metro": true,
+        "sotrudnik": true,
+        "usluga": true,
+        "dopusluga": true
+    }
+}

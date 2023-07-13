@@ -6,7 +6,7 @@ import './UslugiList.css';
 import {useTelegram} from '../hooks/useTelegram';
 import UslugaItem from '../UslugaItem/UslugaItem.jsx';
 import { useLocation } from 'react-router-dom';
-import datajjj from "'./1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS.json";
+import datajjj from "./ttt.json";
 
 const getTotalPrice = (items = []) => {
     return items.reduce((acc, item) => {
