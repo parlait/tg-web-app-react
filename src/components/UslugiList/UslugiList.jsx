@@ -103,8 +103,8 @@ if(zamenimputnagoogle==true){
 }
 let putkfilialu ="https://drive.google.com/file/d/" + kodFiliala;
 let itogdata='jjj';
-const getjsonFiliala= async () => {
-    
+//const getjsonFiliala= async () => {
+    async function getjsonFiliala() {
     try {
     const response = await fetch(putkfilialu);
     const data = await response.json();
