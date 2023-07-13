@@ -164,7 +164,7 @@ const products = [
 //else{
     //getjsonFiliala()
     return (
-    <p>{getjsonFiliala2()}</p>
+    <p>{getjsonFiliala3()}</p>
     );
 //};
 
