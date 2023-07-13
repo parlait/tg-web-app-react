@@ -15,7 +15,7 @@ const getTotalPrice = (items = []) => {
 }
 
  
-const UslugiList = async () => {
+const UslugiList = () => {
     
  //   const [country, setCountry] = useState('');//
  //   const [street, setStreet] = useState('');//
@@ -128,7 +128,7 @@ const products = [
 //const summm= (q,p) => {q+p} 
 //await summm(2,3)
 return (
-    <p>{getjsonFiliala().then(itogdata)}</p>
+    <p>{getjsonFiliala()}</p>
     /*вернуть
    
     <div className={'list'}>
