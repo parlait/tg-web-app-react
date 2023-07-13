@@ -102,7 +102,7 @@ if(zamenimputnagoogle==true){
     kodFiliala=kodFiliala.replace("ghfjeldofndjfkskslejfkdosdhdhdhfesaslhr","1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS") + "/view";
 }
 let putkfilialu ="https://drive.google.com/file/d/" + kodFiliala;
-let itogdata;
+let itogdata='jjj';
 const getjsonFiliala= async () => {
     
     try {
