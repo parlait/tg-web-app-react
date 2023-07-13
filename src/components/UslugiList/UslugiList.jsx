@@ -118,7 +118,7 @@ const getjsonFiliala= async () => {
   }
   return itogdata
 }
-//getjsonFiliala()
+
 const products = [
     {id: '1', title: 'Наращивание', price: 2000, description: 'включен классический маникюр, снятие, покрытие'},
     {id: '2', title: 'Удаление лака', price: 200, description: 'на 10 ногтях снятие геля, акрила,обычного лака'},
@@ -127,8 +127,16 @@ const products = [
 ]
 //const summm= (q,p) => {q+p} 
 //await summm(2,3)
+for(let jj=1;jj<3;jj++){
+    if(jj==1){
+getjsonFiliala()
+}
+else{
 return (
     <p>{itogdata}</p>
+    );
+};
+};
     /*вернуть
    
     <div className={'list'}>
@@ -142,7 +150,7 @@ return (
     </div>
  вернуть*/
 
-);
+
 
 };
 export default UslugiList;
