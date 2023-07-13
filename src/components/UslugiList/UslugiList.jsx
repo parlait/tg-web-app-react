@@ -103,8 +103,8 @@ if(zamenimputnagoogle==true){
 }
 let putkfilialu ="https://drive.google.com/file/d/" + kodFiliala;
 let itogdata='jjj';
-//const getjsonFiliala= async () => {
-    async function getjsonFiliala() {
+const getjsonFiliala= async () => {
+//    async function getjsonFiliala() {
     try {
     const response = await fetch(putkfilialu);
     const data = await response.json();
@@ -128,7 +128,7 @@ const products = [
 //const summm= (q,p) => {q+p} 
 //await summm(2,3)
 return (
-    <p>{getjsonFiliala()}</p>
+    <p>{itogdata}</p>
     /*вернуть
    
     <div className={'list'}>
