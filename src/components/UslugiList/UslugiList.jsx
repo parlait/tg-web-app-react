@@ -118,11 +118,27 @@ async function getjsonFiliala() {
   }
   return itogdata
 }
-const getjsonFiliala3 = async () => {  return 10; }
+const getjsonFiliala1 = async () => {  return 10; }
+
 function getjsonFiliala2() {
     try {
     const response = fetch(putkfilialu);
     const data = response.json();
+    itogdata=data.stringify();
+    //console.log(data)
+  } catch(err) {
+    //console.log('Error >>>', err)
+    try{
+        itogdata='Error >>>' + err.message;
+    } catch {itogdata='Error >>>' + 'сообщение не удалось вывести об ошибке'}
+  }
+  return itogdata
+}
+function getjsonFiliala3() {
+    try {
+        import data from "'./1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS.json";
+    //const response = fetch(putkfilialu);
+    //const data = response.json();
     itogdata=data.stringify();
     //console.log(data)
   } catch(err) {
