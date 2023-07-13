@@ -164,15 +164,19 @@ const products = [
 //}
 //else{
     //getjsonFiliala()
+    function nuzhnyedannye(){
+        let kff=Number(datajjj.kf);
+        for(let jii=0;jii<kff;jii++){
+            if(datajjj.f[jii].n==kodFiliala){return (datajjj.f[jii])}
+        }
+    }
     return (
-    <p>{datajjj.kf}</p>
-    );
-//};
+    <p>{nuzhnyedannye()}</p>
 
-    /*вернуть
-   
+//};
+/*
     <div className={'list'}>
-        {products.map(item => (
+        {nuzhnyedannye().map(item => (
             <UslugaItem
                 product={item}
                 onAdd={onAdd}
@@ -180,8 +184,8 @@ const products = [
             />
         ))}
     </div>
- вернуть*/
-
+*/
+ );
 
 
 };
