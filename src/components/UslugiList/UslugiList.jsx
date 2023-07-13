@@ -116,8 +116,9 @@ const getjsonFiliala= async () => {
         itogdata='Error >>>' + err.message;
     } catch {itogdata='Error >>>' + 'сообщение не удалось вывести об ошибке'}
   }
+  return itogdata
 }
-getjsonFiliala()
+//getjsonFiliala()
 const products = [
     {id: '1', title: 'Наращивание', price: 2000, description: 'включен классический маникюр, снятие, покрытие'},
     {id: '2', title: 'Удаление лака', price: 200, description: 'на 10 ногтях снятие геля, акрила,обычного лака'},
@@ -127,7 +128,7 @@ const products = [
 //const summm= (q,p) => {q+p} 
 //await summm(2,3)
 return (
-    <p>{itogdata}</p>
+    <p>{getjsonFiliala().then(itogdata)}</p>
     /*вернуть
    
     <div className={'list'}>
