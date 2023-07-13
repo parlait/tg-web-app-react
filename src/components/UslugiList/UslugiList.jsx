@@ -8,7 +8,7 @@ import UslugaItem from '../UslugaItem/UslugaItem.jsx';
 import { useLocation } from 'react-router-dom';
 import datajjj from "../uslugipofilialam/ttt.json";
 
-const kodFiliala2=useLocation().pathname.replace("/uslugilist/","");
+//const kodFiliala2=useLocation().pathname.replace("/uslugilist/","");
 const getTotalPrice = (items = []) => {
     return items.reduce((acc, item) => {
         return acc += item.price
