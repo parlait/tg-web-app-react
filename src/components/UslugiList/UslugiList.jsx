@@ -5,7 +5,7 @@ import {useCallback} from 'react';
 import './UslugiList.css';
 import {useTelegram} from '../hooks/useTelegram';
 import UslugaItem from '../UslugaItem/UslugaItem.jsx';
-
+import { useLocation } from 'react-router-dom';
 
 
 const getTotalPrice = (items = []) => {
@@ -21,8 +21,8 @@ const UslugiList = () => {
  //   const [street, setStreet] = useState('');//
  //   const [subject, setSubject] = useState('physical');//
     
-    const {tg,queryId} = useTelegram();
-  
+    //const {tg,queryId} = useTelegram();
+    const {tg} = useTelegram();
     const [addedItems, setAddedItems] = useState([]);
 
     const onSendData = useCallback(() => {
