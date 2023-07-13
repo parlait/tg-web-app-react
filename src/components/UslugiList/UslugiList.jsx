@@ -139,7 +139,7 @@ function getjsonFiliala3() {
         
     //const response = fetch(putkfilialu);
     //const data = response.json();
-    itogdata=datajjj.stringify();
+    itogdata=JSON.stringify(datajjj);
     //console.log(data)
   } catch(err) {
     //console.log('Error >>>', err)
