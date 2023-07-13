@@ -1,14 +1,21 @@
-{
-    "name": "1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS",
-    "versiya": "1",
-    "estVybor":{
-        "filial": true,
-        "gorod": true,
-        "rayon": true,
-        "strana": true,
-        "metro": true,
-        "sotrudnik": true,
-        "usluga": true,
-        "dopusluga": true
-    }
+{"kf":2,"f":[
+    {   "t": "1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS",
+    "ku":2,
+    "u": [{"x":23,"n":"массаж","o":"самая крутая процедура на Земле",
+    "pc":"da","ps":"da","po":"da","pd":"da","ks":2,"kd":2,"c":30,"v":20,"p":0,"s": 
+    [{"x":29,"n":"маша"},{"x":30,"n":"камилла"}],
+    "d":
+    [{"x":23,"n":"массаж","c":30,"v":20,"p":0},
+    {"x":24,"n":"массаж","c":30,"v":20,"p":0}]}]
+},
+{   "t": "1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS",
+    "ku":2,
+    "u": [{"x":23,"n":"массаж","o":"самая крутая процедура на Земле",
+    "pc":"da","ps":"da","po":"da","pd":"da","ks":2,"kd":2,"c":30,"v":20,"p":0,"s": 
+    [{"x":29,"n":"маша"},{"x":30,"n":"камилла"}],
+    "d":
+    [{"x":23,"n":"массаж","c":30,"v":20,"p":0},
+    {"x":24,"n":"массаж","c":30,"v":20,"p":0}]}]
 }
+]}
+   
