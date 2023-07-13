@@ -103,8 +103,8 @@ if(zamenimputnagoogle==true){
 }
 let putkfilialu ="https://drive.google.com/file/d/" + kodFiliala;
 let itogdata='jjj';
-const getjsonFiliala= async () => {
-//    async function getjsonFiliala() {
+//const getjsonFiliala= async () => {
+async function getjsonFiliala() {
     try {
     const response = await fetch(putkfilialu);
     const data = await response.json();
@@ -119,6 +119,20 @@ const getjsonFiliala= async () => {
   return itogdata
 }
 
+function getjsonFiliala2() {
+    try {
+    const response = fetch(putkfilialu);
+    const data = response.json();
+    itogdata=data.stringify();
+    //console.log(data)
+  } catch(err) {
+    //console.log('Error >>>', err)
+    try{
+        itogdata='Error >>>' + err.message;
+    } catch {itogdata='Error >>>' + 'сообщение не удалось вывести об ошибке'}
+  }
+  return itogdata
+}
 const products = [
     {id: '1', title: 'Наращивание', price: 2000, description: 'включен классический маникюр, снятие, покрытие'},
     {id: '2', title: 'Удаление лака', price: 200, description: 'на 10 ногтях снятие геля, акрила,обычного лака'},
@@ -127,16 +141,17 @@ const products = [
 ]
 //const summm= (q,p) => {q+p} 
 //await summm(2,3)
-for(let jj=1;jj<3;jj++){
-    if(jj==1){
-getjsonFiliala()
-}
-else{
-return (
-    <p>{itogdata}</p>
+//for(let jj=1;jj<3;jj++){
+//    if(jj==1){
+
+//}
+//else{
+    //getjsonFiliala()
+    return (
+    <p>{getjsonFiliala2}</p>
     );
-};
-};
+//};
+
     /*вернуть
    
     <div className={'list'}>
