@@ -108,7 +108,7 @@ const getjsonFiliala= async () => {
     try {
     const response = await fetch(putkfilialu);
     const data = await response.json();
-    itogdata=data.stringify;
+    itogdata=data.stringify();
     //console.log(data)
   } catch(err) {
     //console.log('Error >>>', err)
