@@ -5,31 +5,25 @@ import {useCallback} from 'react';
 import './FormDolzhnosti.css';
 import {useTelegram} from '../hooks/useTelegram';
 
-// className={'header'}>
-//     <Button onClick={onClose}>Закрыть</Button>
-//     <span className={'username'}>
-//         {user?.username}
-//     </span>
-//const {user, onClose} = useTelegram();
-
- 
+ //поля: название должности,комментарий, права доступа
+ //nazvanieDolzhnosti,kommentarij,pravaDostupa 
 const FormDolzhnosti = () => {
     
-    const [country, setCountry] = useState('');
-    const [street, setStreet] = useState('');
-    const [subject, setSubject] = useState('physical');
+    const [nazvanieDolzhnosti, setCountry] = useState('');
+    const [kommentarij, setStreet] = useState('');
+    const [pravaDostupa, setSubject] = useState('нет прав доступа');
     
     const {tg} = useTelegram();
     
 
     const onSendData = useCallback( () =>{ 
         const data = {
-            country,
-            street,
-            subject
+            nazvanieDolzhnosti,
+            kommentarij,
+            pravaDostupa
         }
         tg.sendData(JSON.stringify(data));
-    },[country,street,subject])
+    },[nazvanieDolzhnosti,kommentarij,pravaDostupa])
     useEffect( () => {
         tg.onEvent('mainButtonClicked',onSendData)
         return () =>{ 
@@ -42,7 +36,7 @@ const FormDolzhnosti = () => {
 
     useEffect( () => {
         tg.MainButton.setParams({
-            text: 'Отправить данные'
+            text: 'Внести эту должность'
         })
 
     },[])
@@ -50,51 +44,51 @@ const FormDolzhnosti = () => {
 
 
     useEffect( () => {
-            if(!street || !country) {
+            if(!nazvanieDolzhnosti) {
                 tg.MainButton.hide();
             } else {
                 tg.MainButton.show();
             }
-    },[country, street])
+    },[nazvanieDolzhnosti])
      
-    const onChangeCountry = (e) => {
-        setCountry(e.target.value)
+    const onChangeNazvanieDolzhnosti = (e) => {
+        setNazvanieDolzhnosti(e.target.value)
     }
-    const onChangeStreet = (e) => {
-        setStreet(e.target.value)
+    const onChangeKommentarij = (e) => {
+        setKommentarij(e.target.value)
     }
-    const onChangeSubject = (e) => {
-        setSubject(e.target.value)
+    const onChangePravaDostupa = (e) => {
+        setPravaDostupa(e.target.value)
     }
 
     return (
         <div className={"form"}>
-            <h3>Введите ваши данные</h3>
+            <h3>Введите данные для должности</h3>
             <input 
             className={'input'} 
             type="text" 
-            placeholder={'Страна'}
+            placeholder={'Название должности'}
          
-            value={country} 
-            onChange={onChangeCountry} 
+            value={nazvanieDolzhnosti} 
+            onChange={onChangeNazvanieDolzhnosti} 
           
             />
             <input 
             className={'input'} 
             type="text" 
-            placeholder={'Улица'} 
-        
+            placeholder={'Комментарий'} 
+       
             value={street} 
-            onChange={onChangeStreet} 
+            onChange={onChangeKommentarij} 
        
             />
-            <select value={subject} onChange={onChangeSubject} className={'select'}>
-                <option value={'physical'}>Физ. лицо</option>
-                <option value={'legal'}>Юр. лицо</option>
+            <select value={pravaDostupa} onChange={onChangePravaDostupa} className={'select'}>
+                <option value={'prosmotr'}>Просмотр</option>
+                <option value={'redactirovanie'}>Редактирование</option>
             </select>
         </div>
     );
-//select value={subject} onChange={onChangeSubject} className=
+
 
 };
 

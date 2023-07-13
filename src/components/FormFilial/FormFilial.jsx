@@ -5,12 +5,9 @@ import {useCallback} from 'react';
 import './FormFilial.css';
 import {useTelegram} from '../hooks/useTelegram';
 
-// className={'header'}>
-//     <Button onClick={onClose}>Закрыть</Button>
-//     <span className={'username'}>
-//         {user?.username}
-//     </span>
-//const {user, onClose} = useTelegram();
+//город,адрес,метро,район,страна,часовой пояс,как строится запись, показывать ли цены
+
+
 
  
 const FormFilial = () => {
