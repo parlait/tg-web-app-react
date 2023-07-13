@@ -118,7 +118,7 @@ async function getjsonFiliala() {
   }
   return itogdata
 }
-
+const getjsonFiliala3 = async () => {  return 10; }
 function getjsonFiliala2() {
     try {
     const response = fetch(putkfilialu);
@@ -148,7 +148,7 @@ const products = [
 //else{
     //getjsonFiliala()
     return (
-    <p>{getjsonFiliala2}</p>
+    <p>{getjsonFiliala3()}</p>
     );
 //};
 
