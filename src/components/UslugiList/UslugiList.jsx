@@ -116,9 +116,10 @@ selectElem.addEventListener('change', function() {
     function smotretdopuslugi(addedItemsItog) {  
 
         let dopUslugiAdded = {"ничего": "ничего"};
-        
+        let i;
         let vseDopyOdnoiAdded;
         let selectDopElem;
+        let vseDopyMassiv;
         
         
         if(addedItemsItog.length>0){
@@ -129,10 +130,15 @@ selectElem.addEventListener('change', function() {
                 //dopUslugiAdded = {"kk": "hh"};
                 
             try{
-                if(selectDopElem.selectedOptions.length>0){vseDopyOdnoiAdded =selectDopElem.selectedOptions;}
-                else{vseDopyOdnoiAdded ='6'};
-            //vseDopyOdnoiAdded =selectDopElem.selectedOptions;
-            //for (i = 0; i < vseDopyOdnoiAdded.length; i++) {
+                
+                vseDopyOdnoiAdded =selectDopElem.selectedOptions;
+                if(vseDopyOdnoiAdded.length>0){
+                    vseDopyMassiv = [];
+                for (i = 0; i < vseDopyOdnoiAdded.length; i++) {
+                    vseDopyMassiv.push(vseDopyOdnoiAdded.label)
+                }
+            }
+            else{vseDopyMassiv = ['ничего']}
             //  
             //    output += collection[i].label;
             //  }
