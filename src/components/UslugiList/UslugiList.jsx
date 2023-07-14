@@ -125,16 +125,16 @@ selectElem.addEventListener('change', function() {
         if(addedItemsItog.length>0){
                 
             addedItemsItog.forEach(element => {
-                dopUslugiAdded = {"ни1": addedItemsItog.length};
+               
                 try{
                 selectDopElem = document.getElementById(element.x + 'dop');
-                dopUslugiAdded.ни2=document.getElementById(element.x + 'dop').id;
+                
                 //dopUslugiAdded = {"kk": "hh"};
                 
             try{
                 
                 vseDopyOdnoiAdded =selectDopElem.selectedOptions;
-                dopUslugiAdded.ни3=vseDopyOdnoiAdded.length;
+                
                 vseDopyMassiv = [];
                 if(vseDopyOdnoiAdded.length>0){
                 for (i = 0; i < vseDopyOdnoiAdded.length; i++) {
