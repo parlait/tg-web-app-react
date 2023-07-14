@@ -15,8 +15,36 @@ const UslugaItem = ({product, className, onAdd}) => {
             <div className={'title'}>{product.n}</div>
             {product.po ? <div className={'description'}>{product.o}</div> : null}
             {product.pc ? <div className={'price'}><span>Стоимость: <b>{product.c}</b></span></div> : null}
+            <div className={'listdopopcii'}>
+            <label for={product.x + 'dop'}>Дополнительные опции</label>
+            <select multiple size={product.q} name="myselectdopopcii" id={product.x + 'dop'}>
+            {product.d.map(item => (
+            <option value={item.x}>
+                {item.n}
+            </option>
+            ))}
+            </select>
+            </div>
             <div className={'listsotrudnikovuslugi'}>
-            <label for={product.x + 'sotr'}>При желании выберите сотрудника</label>
+            <label for={product.x + 'sotr'}>Сотрудник</label>
+            <select name="myselectsotr" id={product.x + 'sotr'}>
+            <option value="">все</option>
+            {product.s.map(item => (
+            <option value={item.x}>
+                {item.n}
+            </option>
+            ))}
+            </select>
+            </div>
+            
+
+            <Button className={'add-btn'} onClick={onAddHandler}>
+                Выбрать
+            </Button>
+            </div>
+            /*
+                         <div className={'listsotrudnikovuslugi'}>
+            <label for={product.x + 'sotr'}>Сотрудник</label>
             <select multiple size="1" name="myselectsotr" id={product.x + 'sotr'}>
             {product.s.map(item => (
             <option value={item.x}>
@@ -25,10 +53,9 @@ const UslugaItem = ({product, className, onAdd}) => {
             ))}
             </select>
             </div>
-            <label for="pet-select">Choose a pet:</label>
 
-<select multiple name="pets" id="pet-select">
-    <option value="">--Please choose an option--</option>
+<select multiple name="myselectsotr" id={product.x + 'sotr'}>
+    <option value="">все</option>
     <option value="dog">Dog</option>
     <option value="cat">Cat</option>
     <option value="hamster">Hamster</option>
@@ -36,21 +63,6 @@ const UslugaItem = ({product, className, onAdd}) => {
     <option value="spider">Spider</option>
     <option value="goldfish">Goldfish</option>
 </select>
-            <Button className={'add-btn'} onClick={onAddHandler}>
-                Выбрать
-            </Button>
-            </div>
-            /*
-             
-<div className={'listdopopcii'}>
-            <select multiple name="myselectdopopcii" id={product.x + 'dop'}>
-            {product.d.map(item => (
-            <option value={item.x}>
-                {item.n}
-            </option>
-            ))}
-            </select>
-            </div>
 
 
 
