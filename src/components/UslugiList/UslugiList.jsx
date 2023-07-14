@@ -72,15 +72,57 @@ const UslugiList = () => {
     },[])//
 
     function smotretsotrudnikov(addedItemsItog) {
-        let sotrudnikiAdded = [];
+        let sotrudnikiAdded = {};
         if(addedItemsItog.length>0){
-        return ["2","3","4"]}
+            addedItemsItog.array.forEach(element => {
+            let selectSotrElem = document.getElementById(element.x + 'sotr');
+            //let selectedValueSotr = selectSotr.options[selectSotr.selectedIndex].value; 
+            let selectedIndexSotr = selectSotrElem.selectedIndex;
+            sotrudnikiAdded[element.x]=selectedIndexSotr;
+        });
+        /*
+        var selectElem = document.getElementById('select')
+var pElem = document.getElementById('p')
+
+// Когда выбран новый элемент <option>
+selectElem.addEventListener('change', function() {
+  var index = selectElem.selectedIndex;
+  // Добавить данные в <p>
+  pElem.innerHTML = 'selectedIndex: ' + index;
+})
+        */
+//создаем пустой объект var cat = {}; //добавляем свойство: cat.name = "Garfield";
+            /*Спасибо за обратную связь
+            {"products":[
+                {"x":23,"n":"маникюр","o":"самая крутая процедура на Земле",
+                "pc":true,"ps":true,"po":true,"pd":"da","ks":2,"kd":2,"q":2,
+                "c":30,"v":20,"p":0,"s":[{"x":29,"n":"маша"},{"x":30,"n":"камилла"}],
+                "d":[{"x":23,"n":"массаж кисти","c":30,"v":20,"p":0},
+                {"x":26,"n":"массаж локтя","c":30,"v":20,"p":0}]},
+            {"x":37,"n":"маникюр","o":"самая крутая процедура на Земле",
+            "pc":true,"ps":true,"po":true,"pd":"da","ks":2,"kd":2,"q":2,"c":30,"v":20,"p":0,
+            "s":[{"x":29,"n":"маша"},{"x":30,"n":"камилла"}],"d":
+            [{"x":23,"n":"массаж кисти","c":30,"v":20,"p":0},{"x":24,"n":"массаж локтя",
+            "c":30,"v":20,"p":0}]}],"sotrudniki":["2","3","4"],"dopuslugi":["2","3","4"]}
+            */
+        return sotrudnikiAdded}
     }
     function smotretdopuslugi(addedItemsItog) {  
         if(addedItemsItog.length>0){
-        return ["2","3","4"]}
+        
+        
+            return ["2","3","4"]}
      }
+/*
+const element = document.querySelector('#select');
 
+console.log(element.value)
+
+element.addEventListener("change", function() {
+  const element = document.querySelector('#select');
+  alert(element.value)
+});
+*/
 const onAdd = (product) => {
     const alreadyAdded = addedItems.find(item => item.x === product.x);
     let newItems = [];
