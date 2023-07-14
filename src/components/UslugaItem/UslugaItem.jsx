@@ -17,7 +17,7 @@ const UslugaItem = ({product, className, onAdd}) => {
             {product.pc ? <div className={'price'}><span>Стоимость: <b>{product.c}</b></span></div> : null}
             <div className={'listsotrudnikovuslugi'}>
             <label for={product.x + 'sotr'}>При желании выберите сотрудника</label>
-            <select multiple name="myselectsotr" id={product.x + 'sotr'}>
+            <select multiple size="1" name="myselectsotr" id={product.x + 'sotr'}>
             {product.s.map(item => (
             <option value={item.x}>
                 {item.n}
