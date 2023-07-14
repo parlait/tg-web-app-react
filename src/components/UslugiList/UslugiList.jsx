@@ -105,6 +105,7 @@ if(zamenimputnagoogle==true){
 let putkfilialu ="https://drive.google.com/file/d/" + kodFiliala;
 let itogdata='jjj';
 //const getjsonFiliala= async () => {
+    /*
 async function getjsonFiliala() {
     try {
     const response = await fetch(putkfilialu);
@@ -150,6 +151,7 @@ function getjsonFiliala3() {
   }
   return itogdata
 }
+*/
 const products = [
     {id: '1', title: 'Наращивание', price: 2000, description: 'включен классический маникюр, снятие, покрытие'},
     {id: '2', title: 'Удаление лака', price: 200, description: 'на 10 ногтях снятие геля, акрила,обычного лака'},
@@ -164,14 +166,20 @@ const products = [
 //}
 //else{
     //getjsonFiliala()
+    /*
     function nuzhnyedannye(){
         let kff=Number(datajjj.kf);
         for(let jii=0;jii<kff;jii++){
             if(datajjj.f[jii].n==kodFiliala){return (datajjj.f[jii])}
         }
     }
+    let key = "likes birds";
+
+    // то же самое, что и user["likes birds"] = true;
+    user[key] = true;
+    */
     return (
-    <p>{nuzhnyedannye()}</p>
+    <p>{datajjj[kodFiliala].length}</p>
 
 //};
 /*
