@@ -75,7 +75,7 @@ const UslugiList = () => {
         let sotrudnikiAdded = {};
         try{
         if(addedItemsItog.length>0){
-            addedItemsItog.array.forEach(element => {
+            addedItemsItog.forEach(element => {
             let selectSotrElem = document.getElementById(element.x + 'sotr');
             //let selectedValueSotr = selectSotr.options[selectSotr.selectedIndex].value; 
             let selectedIndexSotr = selectSotrElem.selectedIndex;
