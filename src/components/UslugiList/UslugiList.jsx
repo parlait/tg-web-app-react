@@ -115,20 +115,21 @@ selectElem.addEventListener('change', function() {
     
     function smotretdopuslugi(addedItemsItog) {  
 
-        let dopUslugiAdded = {};
-        dopUslugiAdded = {"kk": "hh"};
+        let dopUslugiAdded = {"ничего": "ничего"};
+        
         let vseDopyOdnoiAdded;
         let selectDopElem;
-        /*
-        try{
+        
+        
         if(addedItemsItog.length>0){
-            //let selectDopElem;
-            //let selectedIndexDop;
             
-            addedItemsItog.forEach(element => {
-            selectDopElem = document.getElementById(element.x + 'dop');
             try{
-            vseDopyOdnoiAdded = selectDopElem.selectedOptions;
+            addedItemsItog.forEach(element => {
+                selectDopElem = document.getElementById(element.x + 'dop');
+                dopUslugiAdded = {"kk": "hh"};
+                
+            try{
+            vseDopyOdnoiAdded =["kk","kk","kk"];// selectDopElem.selectedOptions;
             //for (i = 0; i < vseDopyOdnoiAdded.length; i++) {
             //  
             //    output += collection[i].label;
@@ -144,10 +145,9 @@ selectElem.addEventListener('change', function() {
 
         });
         }
-        }
         catch(er){dopUslugiAdded.oshibka=er.message}
-  */
-        
+
+    }
         return dopUslugiAdded  
         
     
