@@ -138,7 +138,7 @@ selectElem.addEventListener('change', function() {
                 vseDopyMassiv = [];
                 if(vseDopyOdnoiAdded.length>0){
                 for (i = 0; i < vseDopyOdnoiAdded.length; i++) {
-                    vseDopyMassiv.push(vseDopyOdnoiAdded.label)
+                    vseDopyMassiv.push(vseDopyOdnoiAdded[i].label)
                 }
             }
             else{vseDopyMassiv = ['ничего']}
