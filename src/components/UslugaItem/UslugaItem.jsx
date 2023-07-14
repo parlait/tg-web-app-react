@@ -10,7 +10,8 @@ const UslugaItem = ({product, className, onAdd}) => {
 // <div className={'img'}/>
 
     return (
-        <p>{item.n}</p>
+        <p>ну хоть это покажет</p>
+       // <p>{item.n}</p>
         /*
         <div className={'product ' + className}>
             <div className={'title'}>{product.n}</div>
