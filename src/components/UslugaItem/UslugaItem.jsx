@@ -28,7 +28,7 @@ const UslugaItem = ({product, className, onAdd}) => {
             <div className={'listsotrudnikovuslugi'}>
             <label for={product.x + 'sotr'}>Сотрудник</label>
             <select name="myselectsotr" id={product.x + 'sotr'}>
-            <option value="">все</option>
+            <option value="0">любой</option>
             {product.s.map(item => (
             <option value={item.x}>
                 {item.n}
