@@ -126,8 +126,10 @@ selectElem.addEventListener('change', function() {
             dopUslugiAdded = {"ни": addedItemsItog.length};
             
             addedItemsItog.forEach(element => {
+                dopUslugiAdded = {"ни1": addedItemsItog.length};
                 try{
                 selectDopElem = document.getElementById(element.x + 'dop');
+                dopUslugiAdded = {"ни2": document.getElementById(element.x + 'dop').id};
                 //dopUslugiAdded = {"kk": "hh"};
                 
             try{
