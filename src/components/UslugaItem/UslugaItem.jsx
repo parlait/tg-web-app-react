@@ -14,10 +14,11 @@ const UslugaItem = ({product, className, onAdd}) => {
         <div className={'product ' + className}>
             <div className={'title'}>{product.n}</div>
             {product.po ? <div className={'description'}>{product.o}</div> : null}
+            {product.pc ? <div className={'price'}><span>Стоимость: <b>{product.c}</b></span></div> : null}
             </div>
             /*
             
-            {product.pc ? <div className={'price'}><span>Стоимость: <b>{product.c}</b></span></div> : null}
+            
             <div className={'listdopopcii'}>
             <select multiple name="myselectdopopcii" id={product.x + dop}>
             {product.d.map(item => (
