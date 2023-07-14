@@ -180,12 +180,12 @@ const products = [
     */
     return (
     //    <p>{kodFiliala}</p>
-    <p>{datajjj[kodFiliala].length}</p>
+    //<p>{datajjj[kodFiliala].length}</p>
 
 //};
-/*
+
     <div className={'list'}>
-        {nuzhnyedannye().map(item => (
+        {datajjj[kodFiliala].map(item => (
             <UslugaItem
                 product={item}
                 onAdd={onAdd}
@@ -193,7 +193,7 @@ const products = [
             />
         ))}
     </div>
-*/
+
  );
 
 

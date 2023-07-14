@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from "../Button/Button";
 import './UslugaItem.css';
-import datajjj from "../uslugipofilialam/ttt.json";
+//import datajjj from "../uslugipofilialam/ttt.json";
 const UslugaItem = ({product, className, onAdd}) => {
 
     const onAddHandler = () => {
@@ -15,23 +15,23 @@ nuzhnoOpisanieUslugi=true
 nuzhnaCenaUslugi=true
     return (
         <div className={'product ' + className}>
-            <div className={'title'}>{product.title}</div>
-            {nuzhnoOpisanieUslugi ? <div className={'description'}>{product.description}</div> : null}
-            {nuzhnaCenaUslugi ? <div className={'price'}><span>Стоимость: <b>{product.price}</b></span></div> : null}
+            <div className={'title'}>{product.n}</div>
+            {product.po ? <div className={'description'}>{product.o}</div> : null}
+            {product.pc ? <div className={'price'}><span>Стоимость: <b>{product.c}</b></span></div> : null}
             <div className={'listdopopcii'}>
-            <select multiple name="myselectdopopcii" id={product.id + dop}>
-            {sotrudnkiuslugi.map(item => (
-            <option value={dopid}>
-                {imyadop}
+            <select multiple name="myselectdopopcii" id={product.x + dop}>
+            {product.d.map(item => (
+            <option value={item.x}>
+                {item.n}
             </option>
             ))}
             </select>
             </div>
             <div className={'listsotrudnikovuslugi'}>
-            <select multiple name="myselectsotr" id={product.id + sotr}>
-            {sotrudnkiuslugi.map(item => (
-            <option value={sotrid}>
-                {imyasotr}
+            <select multiple name="myselectsotr" id={product.x + sotr}>
+            {product.s.map(item => (
+            <option value={item.x}>
+                {item.n}
             </option>
             ))}
             </select>
