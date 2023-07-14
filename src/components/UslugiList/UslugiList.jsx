@@ -116,6 +116,7 @@ selectElem.addEventListener('change', function() {
     function smotretdopuslugi(addedItemsItog) {  
         let dopUslugiAdded = {};
         let vseDopyOdnoiAdded;
+        let selectDopElem;
         try{
         if(addedItemsItog.length>0){
             //let selectDopElem;
