@@ -148,13 +148,13 @@ selectElem.addEventListener('change', function() {
 
             //dopUslugaAdded= Array.prototype.slice.call(document.querySelectorAll('#' + element.x + 'dop' + ' option')).filter(option => option.selected).map(x => x.value).join();
         }
-        catch(err){vseDopyOdnoiAdded=err.message}   
-            dopUslugiAdded[element.x]=vseDopyOdnoiAdded;
+        catch(err){vseDopyMassiv=err.message}   
+            dopUslugiAdded[element.x]=vseDopyMassiv;
 
         });
         }
-        catch(er){vseDopyOdnoiAdded=er.message
-            dopUslugiAdded[element.x]=vseDopyOdnoiAdded;}
+        catch(er){vseDopyMassiv=er.message
+            dopUslugiAdded[element.x]=vseDopyMassiv}
 
     }
         return dopUslugiAdded  
