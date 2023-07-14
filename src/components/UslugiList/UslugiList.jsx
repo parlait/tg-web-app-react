@@ -124,8 +124,9 @@ selectElem.addEventListener('change', function() {
         
         if(addedItemsItog.length>0){
             dopUslugiAdded = {"ни": addedItemsItog.length};
-            try{
+            
             addedItemsItog.forEach(element => {
+                try{
                 selectDopElem = document.getElementById(element.x + 'dop');
                 //dopUslugiAdded = {"kk": "hh"};
                 
@@ -150,11 +151,12 @@ selectElem.addEventListener('change', function() {
         }
         catch(err){vseDopyMassiv=err.message}   
             dopUslugiAdded[element.x]=vseDopyMassiv;
-
+    }
+            catch(er){vseDopyMassiv=er.message
+                dopUslugiAdded[element.x]=vseDopyMassiv}
         });
-        }
-        catch(er){vseDopyMassiv=er.message
-            dopUslugiAdded[element.x]=vseDopyMassiv}
+        
+
 
     }
         return dopUslugiAdded  
