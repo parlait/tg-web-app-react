@@ -135,8 +135,8 @@ selectElem.addEventListener('change', function() {
                 
                 vseDopyOdnoiAdded =selectDopElem.selectedOptions;
                 dopUslugiAdded.ни3=vseDopyOdnoiAdded.length;
+                vseDopyMassiv = [];
                 if(vseDopyOdnoiAdded.length>0){
-                    vseDopyMassiv = [];
                 for (i = 0; i < vseDopyOdnoiAdded.length; i++) {
                     vseDopyMassiv.push(vseDopyOdnoiAdded.label)
                 }
