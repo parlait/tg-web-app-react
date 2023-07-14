@@ -179,8 +179,8 @@ const products = [
     user[key] = true;
     */
     return (
-        <p>{kodFiliala}</p>
-    //<p>{datajjj[kodFiliala].length}</p>
+    //    <p>{kodFiliala}</p>
+    <p>{datajjj[kodFiliala].length}</p>
 
 //};
 /*
