@@ -115,21 +115,28 @@ selectElem.addEventListener('change', function() {
     
     function smotretdopuslugi(addedItemsItog) {  
         let dopUslugiAdded = {};
-        let dopUslugaAdded;
+        let vseDopyOdnoiAdded;
         try{
         if(addedItemsItog.length>0){
             //let selectDopElem;
             //let selectedIndexDop;
             
             addedItemsItog.forEach(element => {
-            //selectDopElem = document.getElementById(element.x + 'dop');
+            selectDopElem = document.getElementById(element.x + 'dop');
+            try{
+            vseDopyOdnoiAdded = selectDopElem.selectedOptions;
+            //for (i = 0; i < vseDopyOdnoiAdded.length; i++) {
+            //  
+            //    output += collection[i].label;
+            //  }
+              //output += collection[i].label;
             //let selectedValueSotr = selectSotr.options[selectSotr.selectedIndex].value; 
             //selectedIndexDop = selectSotrElem.selectedIndex;
-            try{
-            dopUslugaAdded= Array.prototype.slice.call(document.querySelectorAll('#' + element.x + 'dop' + ' option')).filter(option => option.selected).map(x => x.value).join();
+
+            //dopUslugaAdded= Array.prototype.slice.call(document.querySelectorAll('#' + element.x + 'dop' + ' option')).filter(option => option.selected).map(x => x.value).join();
         }
-        catch(err){dopUslugaAdded=err.message}   
-            dopUslugiAdded[element.x]=dopUslugaAdded;
+        catch(err){vseDopyOdnoiAdded=err.message}   
+            dopUslugiAdded[element.x]=vseDopyOdnoiAdded;
 
         });
         }
