@@ -127,10 +127,10 @@ selectElem.addEventListener('change', function() {
             //selectedIndexDop = selectSotrElem.selectedIndex;
             try{
             dopUslugaAdded= Array.prototype.slice.call(document.querySelectorAll('#' + element.x + 'dop' + ' option')).filter(option => option.selected).map(x => x.value).join();
-    
+        }
+        catch(err){dopUslugaAdded=err.message}   
             dopUslugiAdded[element.x]=dopUslugaAdded;
-            }
-            catch{dopUslugiAdded.oshibka=element.x}
+
         });
         }
         }
