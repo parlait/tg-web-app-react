@@ -29,7 +29,7 @@ const UslugiList = () => {
     const onSendData = useCallback(() => {
         const data = {
             products: addedItems,
-            totalPrice: getTotalPrice(addedItems),
+            //totalPrice: getTotalPrice(addedItems),
             //queryId,
         //}
         
