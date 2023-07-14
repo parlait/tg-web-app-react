@@ -16,7 +16,7 @@ const UslugaItem = ({product, className, onAdd}) => {
             {product.po ? <div className={'description'}>{product.o}</div> : null}
             {product.pc ? <div className={'price'}><span>Стоимость: <b>{product.c}</b></span></div> : null}
             <div className={'listdopopcii'}>
-            <label for={product.x + 'dop'}>Дополнительные опции</label>
+            <label for={product.x + 'dop'}>Добавить опции:</label>
             <select multiple size={product.q} name="myselectdopopcii" id={product.x + 'dop'}>
             {product.d.map(item => (
             <option value={item.x}>
@@ -26,7 +26,7 @@ const UslugaItem = ({product, className, onAdd}) => {
             </select>
             </div>
             <div className={'listsotrudnikovuslugi'}>
-            <label for={product.x + 'sotr'}>Сотрудник</label>
+            <label for={product.x + 'sotr'}>Выбрать сотрудника:</label>
             <select name="myselectsotr" id={product.x + 'sotr'}>
             <option value="0">любой</option>
             {product.s.map(item => (
