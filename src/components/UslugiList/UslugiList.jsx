@@ -86,7 +86,7 @@ const onAdd = (product) => {
     } else {
         tg.MainButton.show();
         tg.MainButton.setParams({
-            text: `Купить ${getTotalPrice(newItems)}`
+            text: `Далее`//(Выбрано на ${getTotalPrice(newItems)})`
         })
     }
 }
