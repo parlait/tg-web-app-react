@@ -141,7 +141,7 @@ selectElem.addEventListener('change', function() {
         });
         }
         }
-        catch{dopUslugiAdded.oshibka="да"}
+        catch(er){dopUslugiAdded.oshibka=er.message}
   
         return dopUslugiAdded  
         
