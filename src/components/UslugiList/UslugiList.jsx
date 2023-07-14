@@ -11,7 +11,7 @@ import datajjj from "../uslugipofilialam/ttt.json";
 //const kodFiliala2=useLocation().pathname.replace("/uslugilist/","");
 const getTotalPrice = (items = []) => {
     return items.reduce((acc, item) => {
-        return acc += item.price
+        return acc += item.c
     }, 0)
 }
 
@@ -68,18 +68,13 @@ const UslugiList = () => {
         })//
 
     },[])//
-   
-
-
-
-
 
 const onAdd = (product) => {
-    const alreadyAdded = addedItems.find(item => item.id === product.id);
+    const alreadyAdded = addedItems.find(item => item.x === product.x);
     let newItems = [];
 
     if(alreadyAdded) {
-        newItems = addedItems.filter(item => item.id !== product.id);
+        newItems = addedItems.filter(item => item.x !== product.x);
     } else {
         newItems = [...addedItems, product];
     }
@@ -102,8 +97,8 @@ let zamenimputnagoogle=true;
 if(zamenimputnagoogle==true){
     kodFiliala=kodFiliala.replace("ghfjeldofndjfkskslejfkdosdhdhdhfesaslhr","1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS");
 }
-let putkfilialu ="https://drive.google.com/file/d/" + kodFiliala + "/view";
-let itogdata='jjj';
+//let putkfilialu ="https://drive.google.com/file/d/" + kodFiliala + "/view";
+//let itogdata='jjj';
 //const getjsonFiliala= async () => {
     /*
 async function getjsonFiliala() {
@@ -152,12 +147,13 @@ function getjsonFiliala3() {
   return itogdata
 }
 */
-const products = [
+const products = datajjj[kodFiliala];/*[
     {id: '1', title: 'Наращивание', price: 2000, description: 'включен классический маникюр, снятие, покрытие'},
     {id: '2', title: 'Удаление лака', price: 200, description: 'на 10 ногтях снятие геля, акрила,обычного лака'},
     {id: '3', title: 'Покрытие под кутикулу', price: 5000, description: 'покрытие под кутикулу гель-лаком или обычным лаком'},
     {id: '4', title: 'Обрезной маникюр', price: 122, description: 'маникюр ножничками с коррекцией формы и длины и снятием'},
 ]
+*/
 //const summm= (q,p) => {q+p} 
 //await summm(2,3)
 //for(let jj=1;jj<3;jj++){
