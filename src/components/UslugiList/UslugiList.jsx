@@ -123,18 +123,18 @@ selectElem.addEventListener('change', function() {
         
         
         if(addedItemsItog.length>0){
-            dopUslugiAdded = {"ни": addedItemsItog.length};
-            
+                
             addedItemsItog.forEach(element => {
                 dopUslugiAdded = {"ни1": addedItemsItog.length};
                 try{
                 selectDopElem = document.getElementById(element.x + 'dop');
-                dopUslugiAdded = {"ни2": document.getElementById(element.x + 'dop').id};
+                dopUslugiAdded.ни2=document.getElementById(element.x + 'dop').id;
                 //dopUslugiAdded = {"kk": "hh"};
                 
             try{
                 
                 vseDopyOdnoiAdded =selectDopElem.selectedOptions;
+                dopUslugiAdded.ни3=vseDopyOdnoiAdded.length;
                 if(vseDopyOdnoiAdded.length>0){
                     vseDopyMassiv = [];
                 for (i = 0; i < vseDopyOdnoiAdded.length; i++) {
