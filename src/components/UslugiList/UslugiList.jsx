@@ -100,9 +100,9 @@ kodFiliala=useLocation().pathname.replace("/uslugilist/","");
 
 let zamenimputnagoogle=true;
 if(zamenimputnagoogle==true){
-    kodFiliala=kodFiliala.replace("ghfjeldofndjfkskslejfkdosdhdhdhfesaslhr","1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS") + "/view";
+    kodFiliala=kodFiliala.replace("ghfjeldofndjfkskslejfkdosdhdhdhfesaslhr","1rA9whn8a9x0ayCFdd0r_NeqrjQoOccJS");
 }
-let putkfilialu ="https://drive.google.com/file/d/" + kodFiliala;
+let putkfilialu ="https://drive.google.com/file/d/" + kodFiliala + "/view";
 let itogdata='jjj';
 //const getjsonFiliala= async () => {
     /*
