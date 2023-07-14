@@ -125,10 +125,12 @@ selectElem.addEventListener('change', function() {
             //selectDopElem = document.getElementById(element.x + 'dop');
             //let selectedValueSotr = selectSotr.options[selectSotr.selectedIndex].value; 
             //selectedIndexDop = selectSotrElem.selectedIndex;
-
+            try{
             dopUslugaAdded= Array.prototype.slice.call(document.querySelectorAll('#' + element.x + 'dop' + ' option')).filter(option => option.selected).map(x => x.value).join();
     
             dopUslugiAdded[element.x]=dopUslugaAdded;
+            }
+            catch{dopUslugiAdded.oshibka=element.x}
         });
         }
         }
