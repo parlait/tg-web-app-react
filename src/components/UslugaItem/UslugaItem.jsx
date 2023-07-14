@@ -10,6 +10,8 @@ const UslugaItem = ({product, className, onAdd}) => {
 // <div className={'img'}/>
 
     return (
+        <p>{item.n}</p>
+        /*
         <div className={'product ' + className}>
             <div className={'title'}>{product.n}</div>
             {product.po ? <div className={'description'}>{product.o}</div> : null}
@@ -36,6 +38,7 @@ const UslugaItem = ({product, className, onAdd}) => {
                 Выбрать
             </Button>
         </div>
+        */
     );
 };
 export default UslugaItem;
