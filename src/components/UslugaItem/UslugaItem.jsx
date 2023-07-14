@@ -15,6 +15,9 @@ const UslugaItem = ({product, className, onAdd}) => {
             <div className={'title'}>{product.n}</div>
             {product.po ? <div className={'description'}>{product.o}</div> : null}
             {product.pc ? <div className={'price'}><span>Стоимость: <b>{product.c}</b></span></div> : null}
+            <Button className={'add-btn'} onClick={onAddHandler}>
+                Выбрать
+            </Button>
             </div>
             /*
             
@@ -37,9 +40,7 @@ const UslugaItem = ({product, className, onAdd}) => {
             ))}
             </select>
             </div>
-            <Button className={'add-btn'} onClick={onAddHandler}>
-                Выбрать
-            </Button>
+
         </div>
         */
     );
