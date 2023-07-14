@@ -8,11 +8,7 @@ const UslugaItem = ({product, className, onAdd}) => {
         onAdd(product);
     }
 // <div className={'img'}/>
-if(vyborsotr==true) {"vybrat"}
-if(vybordop==true) {"vybrat"}
-if(pokazyvatcenu==true){"vybrat"}
-nuzhnoOpisanieUslugi=true
-nuzhnaCenaUslugi=true
+
     return (
         <div className={'product ' + className}>
             <div className={'title'}>{product.n}</div>
