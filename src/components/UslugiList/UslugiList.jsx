@@ -114,10 +114,12 @@ selectElem.addEventListener('change', function() {
         return sotrudnikiAdded}
     
     function smotretdopuslugi(addedItemsItog) {  
-/*
+
         let dopUslugiAdded = {};
+        dopUslugiAdded = {"kk": "hh"};
         let vseDopyOdnoiAdded;
         let selectDopElem;
+        /*
         try{
         if(addedItemsItog.length>0){
             //let selectDopElem;
@@ -145,7 +147,7 @@ selectElem.addEventListener('change', function() {
         }
         catch(er){dopUslugiAdded.oshibka=er.message}
   */
-        let dopUslugiAdded = {"kk": "hh"};
+        
         return dopUslugiAdded  
         
     
