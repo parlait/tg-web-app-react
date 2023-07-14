@@ -126,10 +126,12 @@ selectElem.addEventListener('change', function() {
             try{
             addedItemsItog.forEach(element => {
                 selectDopElem = document.getElementById(element.x + 'dop');
-                dopUslugiAdded = {"kk": "hh"};
+                //dopUslugiAdded = {"kk": "hh"};
                 
             try{
-            vseDopyOdnoiAdded =["kk","kk","kk"];// selectDopElem.selectedOptions;
+                if(selectDopElem.selectedOptions.length>0){vseDopyOdnoiAdded =selectDopElem.selectedOptions;}
+                else{vseDopyOdnoiAdded ='6'};
+            //vseDopyOdnoiAdded =selectDopElem.selectedOptions;
             //for (i = 0; i < vseDopyOdnoiAdded.length; i++) {
             //  
             //    output += collection[i].label;
@@ -145,7 +147,8 @@ selectElem.addEventListener('change', function() {
 
         });
         }
-        catch(er){dopUslugiAdded.oshibka=er.message}
+        catch(er){vseDopyOdnoiAdded=er.message
+            dopUslugiAdded[element.x]=vseDopyOdnoiAdded;}
 
     }
         return dopUslugiAdded  
