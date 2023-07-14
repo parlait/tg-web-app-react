@@ -73,9 +73,13 @@ const UslugiList = () => {
 
     function smotretsotrudnikov(addedItemsItog) {
         let sotrudnikiAdded = [];
-        return 
+        if(addedItemsItog.length>0){
+        return ["2","3","4"]}
     }
-    function smotretdopuslugi(addedItemsItog) {    }
+    function smotretdopuslugi(addedItemsItog) {  
+        if(addedItemsItog.length>0){
+        return ["2","3","4"]}
+     }
 
 const onAdd = (product) => {
     const alreadyAdded = addedItems.find(item => item.x === product.x);
