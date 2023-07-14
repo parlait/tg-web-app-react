@@ -29,6 +29,8 @@ const UslugiList = () => {
     const onSendData = useCallback(() => {
         const data = {
             products: addedItems,
+            sotrudniki: smotretsotrudnikov(addedItems),
+            dopuslugi: smotretdopuslugi(addedItems)
             //totalPrice: getTotalPrice(addedItems),
             //queryId,
         //}
@@ -68,6 +70,12 @@ const UslugiList = () => {
         })//
 
     },[])//
+
+    function smotretsotrudnikov(addedItemsItog) {
+        let sotrudnikiAdded = [];
+        return 
+    }
+    function smotretdopuslugi(addedItemsItog) {    }
 
 const onAdd = (product) => {
     const alreadyAdded = addedItems.find(item => item.x === product.x);
