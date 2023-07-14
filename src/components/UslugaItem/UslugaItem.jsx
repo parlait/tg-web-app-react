@@ -15,15 +15,6 @@ const UslugaItem = ({product, className, onAdd}) => {
             <div className={'title'}>{product.n}</div>
             {product.po ? <div className={'description'}>{product.o}</div> : null}
             {product.pc ? <div className={'price'}><span>Стоимость: <b>{product.c}</b></span></div> : null}
-            <div className={'listdopopcii'}>
-            <select multiple name="myselectdopopcii" id={product.x + 'dop'}>
-            {product.d.map(item => (
-            <option value={item.x}>
-                {item.n}
-            </option>
-            ))}
-            </select>
-            </div>
             <div className={'listsotrudnikovuslugi'}>
             <select multiple name="myselectsotr" id={product.x + 'sotr'}>
             {product.s.map(item => (
@@ -39,7 +30,15 @@ const UslugaItem = ({product, className, onAdd}) => {
             </div>
             /*
              
-
+<div className={'listdopopcii'}>
+            <select multiple name="myselectdopopcii" id={product.x + 'dop'}>
+            {product.d.map(item => (
+            <option value={item.x}>
+                {item.n}
+            </option>
+            ))}
+            </select>
+            </div>
 
 
 
