@@ -13,9 +13,9 @@ const UslugaItem = ({product, className, onAdd}) => {
        // <p>ну хоть это покажет</p>
         <div className={'product ' + className}>
             <p>{product.n}</p>
-        </div>
-            /*
             <div className={'title'}>{product.n}</div>
+            </div>
+            /*
             {product.po ? <div className={'description'}>{product.o}</div> : null}
             {product.pc ? <div className={'price'}><span>Стоимость: <b>{product.c}</b></span></div> : null}
             <div className={'listdopopcii'}>
