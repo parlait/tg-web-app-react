@@ -123,7 +123,7 @@ selectElem.addEventListener('change', function() {
         
         
         if(addedItemsItog.length>0){
-            
+            dopUslugiAdded = {"ни": addedItemsItog.length};
             try{
             addedItemsItog.forEach(element => {
                 selectDopElem = document.getElementById(element.x + 'dop');
