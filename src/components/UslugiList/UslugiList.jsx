@@ -75,10 +75,12 @@ const UslugiList = () => {
         let sotrudnikiAdded = {};
         try{
         if(addedItemsItog.length>0){
+            let selectSotrElem;
+            let selectedIndexSotr;
             addedItemsItog.forEach(element => {
-            let selectSotrElem = document.getElementById(element.x + 'sotr');
+            selectSotrElem = document.getElementById(element.x + 'sotr');
             //let selectedValueSotr = selectSotr.options[selectSotr.selectedIndex].value; 
-            let selectedIndexSotr = selectSotrElem.selectedIndex;
+            selectedIndexSotr = selectSotrElem.selectedIndex;
             sotrudnikiAdded[element.x]=selectedIndexSotr;
         });
         }
@@ -112,11 +114,52 @@ selectElem.addEventListener('change', function() {
         return sotrudnikiAdded}
     
     function smotretdopuslugi(addedItemsItog) {  
+        let dopUslugiAdded = {};
+        let dopUslugaAdded;
+        try{
         if(addedItemsItog.length>0){
+            //let selectDopElem;
+            //let selectedIndexDop;
+            
+            addedItemsItog.forEach(element => {
+            //selectDopElem = document.getElementById(element.x + 'dop');
+            //let selectedValueSotr = selectSotr.options[selectSotr.selectedIndex].value; 
+            //selectedIndexDop = selectSotrElem.selectedIndex;
+
+            dopUslugaAdded= Array.prototype.slice.call(document.querySelectorAll('#' + element.x + 'dop' + ' option')).filter(option => option.selected).map(x => x.value).join();
+    
+            dopUslugiAdded[element.x]=dopUslugaAdded;
+        });
+        }
+        }
+        catch{dopUslugiAdded.oshibka="да"}
+  
+        return dopUslugiAdded  
         
-        
-            return ["2","3","4"]}
+    
      }
+                 /*document.getElementById('resultId').innerHTML = Array.prototype.slice.call(document.querySelectorAll('#selectId option')).filter(option => option.selected).map(x => x.value).join();
+            
+            <div id="weeklyID" class=" multisel-container">
+  <label class=" multisel-label" for="groupFormReportsInput">Назначьте
+                        показатели</label>
+  <div class=" select-container">
+    <select id="selectId" class="multisel selectpicker" multiple name="week_days">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="1">1</option>
+    </select>
+  </div>
+</div>
+<br>
+<input type="button" value="click me" onclick="isUserId()">
+<br>
+<div id='resultId'></div>
+*/
 /*
 const element = document.querySelector('#select');
 
