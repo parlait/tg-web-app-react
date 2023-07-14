@@ -73,6 +73,7 @@ const UslugiList = () => {
 
     function smotretsotrudnikov(addedItemsItog) {
         let sotrudnikiAdded = {};
+        try{
         if(addedItemsItog.length>0){
             addedItemsItog.array.forEach(element => {
             let selectSotrElem = document.getElementById(element.x + 'sotr');
@@ -80,6 +81,9 @@ const UslugiList = () => {
             let selectedIndexSotr = selectSotrElem.selectedIndex;
             sotrudnikiAdded[element.x]=selectedIndexSotr;
         });
+        }
+        }
+        catch{sotrudnikiAdded.oshibka="да"}
         /*
         var selectElem = document.getElementById('select')
 var pElem = document.getElementById('p')
@@ -106,7 +110,7 @@ selectElem.addEventListener('change', function() {
             "c":30,"v":20,"p":0}]}],"sotrudniki":["2","3","4"],"dopuslugi":["2","3","4"]}
             */
         return sotrudnikiAdded}
-    }
+    
     function smotretdopuslugi(addedItemsItog) {  
         if(addedItemsItog.length>0){
         
