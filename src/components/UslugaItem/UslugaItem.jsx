@@ -24,13 +24,6 @@ const UslugaItem = ({product, className, onAdd}) => {
             ))}
             </select>
             </div>
-            <Button className={'add-btn'} onClick={onAddHandler}>
-                Выбрать
-            </Button>
-            </div>
-            /*
-             
-
             <div className={'listsotrudnikovuslugi'}>
             <select multiple name="myselectsotr" id={product.x + 'sotr'}>
             {product.s.map(item => (
@@ -40,6 +33,14 @@ const UslugaItem = ({product, className, onAdd}) => {
             ))}
             </select>
             </div>
+            <Button className={'add-btn'} onClick={onAddHandler}>
+                Выбрать
+            </Button>
+            </div>
+            /*
+             
+
+
 
 
         */
