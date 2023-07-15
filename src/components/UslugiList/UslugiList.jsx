@@ -141,7 +141,7 @@ selectElem.addEventListener('change', function() {
                     vseDopyMassiv.push(vseDopyOdnoiAdded[i].label)
                 }
             }
-            else{vseDopyMassiv = ['ничего']}
+            else{vseDopyMassiv = ['nehotyatinenado']}
             //  
             //    output += collection[i].label;
             //  }
