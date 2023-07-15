@@ -115,7 +115,7 @@ selectElem.addEventListener('change', function() {
     
     function smotretdopuslugi(addedItemsItog) {  
 
-        let dopUslugiAdded = {"ничего": "ничего"};
+        let dopUslugiAdded = {"test": "test"};
         let i;
         let vseDopyOdnoiAdded;
         let selectDopElem;
